@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -35,11 +37,11 @@
 
 	<!-- Center elements -->
 	    <ul class="navbar-nav flex-row d-none d-md-flex">
-	    	<li><a class="nav-link active" href="Home.php">Home</a></li>
-	    	<li><a class="nav-link active" href="About.php">About</a></li>
-	    	<li><a class="nav-link active" href="News.php">News</a></li>
-	    	<li><a class="nav-link active" href="application.php">Application</a></li>
-	    	<li><a class="nav-link active" href="contact.php">Contact</a></li>
+			<li><a class="dropdown-item" href="Home.php">Home</a></li>
+	    	<li><a class="dropdown-item" href="About.php">About</a></li>
+	    	<li><a class="dropdown-item" href="News.php">News</a></li>
+	    	<li><a class="dropdown-item" href="application.php">Application</a></li>
+	    	<li><a class="dropdown-item" href="contact.php">Contact</a></li>
 	    </ul>
 	<!-- Center elements -->
 
@@ -260,4 +262,8 @@
   type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
 ></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
