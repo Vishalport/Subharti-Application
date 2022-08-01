@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="../../CSS/style.css">
 
 	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -35,18 +35,18 @@
 
 	<!-- Center elements -->
 	    <ul class="navbar-nav flex-row d-none d-md-flex">
-	    	<li><a class="nav-link active" href="Home.html">Home</a></li>
-	    	<li><a class="nav-link active" href="About.html">About</a></li>
-	    	<li><a class="nav-link active" href="News.html">News</a></li>
-	    	<li><a class="nav-link active" href="application.html">Application</a></li>
-	    	<li><a class="nav-link active" href="contact.html">Contact</a></li>
+	    	<li><a class="nav-link active" href="Home.php">Home</a></li>
+	    	<li><a class="nav-link active" href="About.php">About</a></li>
+	    	<li><a class="nav-link active" href="News.php">News</a></li>
+	    	<li><a class="nav-link active" href="application.php">Application</a></li>
+	    	<li><a class="nav-link active" href="contact.php">Contact</a></li>
 	    </ul>
 	<!-- Center elements -->
 
 	<!-- Right elements -->
 	    <ul class="navbar-nav flex-row">
 	      <li class="nav-item me-3 me-lg-1">
-	        <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+	        <a class="nav-link d-sm-flex align-items-sm-center" href="Login.php">
 	          <img
 	            src="https://pngimage.net/wp-content/uploads/2019/05/user-icon-png-free-download-2.png"
 	            class="rounded-circle"
@@ -202,16 +202,16 @@
 
 	          <ul class="list-unstyled mb-0">
 	            <li>
-	              <a href="about.html" class="text-white">About</a>
+	              <a href="about.php" class="text-white">About</a>
 	            </li>
 	            <li>
-	              <a href="news.html" class="text-white">News</a>
+	              <a href="news.php" class="text-white">News</a>
 	            </li>
 	            <li>
-	              <a href="application.html" class="text-white">Application</a>
+	              <a href="application.php" class="text-white">Application</a>
 	            </li>
 	            <li>
-	              <a href="logout.html" class="text-white">Log out</a>
+	              <a href="logout.php" class="text-white">Log out</a>
 	            </li>
 	          </ul>
 	        </div>
