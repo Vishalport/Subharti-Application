@@ -1,0 +1,371 @@
+.breadcrumbs-section {
+  background-color: #e9ecef;
+}
+
+.home-newsletter{
+  background-color: rgb(78, 78, 158);
+  color: white;
+}
+
+span{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .section-head{
+  margin: 60px;
+} */
+
+.section-head h4{
+  position: relative;
+  padding: 0;
+  color: #F84545;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+/* .section-head h4 ::before {
+  content: '';
+  width: 500px;
+  height: 1px;
+  background: red ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+} */
+
+.section-head h4 span {
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: #324584; 
+}
+
+.section-head p {
+  color: #0C2F48;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.item {
+  background: #fff;
+  text-align: center;
+  padding: 30px 25px;
+  box-shadow: 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 5px solid rgb(0,0,0,0.07);
+  -webkit-transition: all 0.5 ease 0s;
+  transition: all 0.5 ease 0s;
+}
+
+
+.top_btn {
+  margin-top: 40px;
+} 
+
+p{
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.footer_item_color {
+  color:#fff;
+}
+.footer_head {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.footer_menu {
+  margin-top: 80px;
+}
+.location_icon {
+  margin-top: 80px;
+  color: #fff;
+  font-size: 20px;
+}
+.phone_icon {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+@media (max-width: 454px) {
+  .responsive_block {
+    text-align: center;
+    overflow-x: hidden;
+  }
+}
+.service_page_lists {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+
+#vs_about_row {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+
+#vs_about_front {
+  background-color: rgb(251, 247, 247);
+  padding: 40px;
+}
+
+#vs_about_row_popup {
+  padding-top: 100px;
+  padding: 20px;
+}
+@media (max-width: 454px) {
+  .text-right {
+      margin-left: 315px;
+      margin-top: -50px;
+  }
+  .vs_responsive_block {
+    overflow-x:hidden;
+    text-align: center;
+  }
+  }
+
+  .vs_about_Heading_mp {
+    padding-top: 80px;
+  }
+@media (max-width: 454px) {
+  .row{
+    text-align: center;
+  }
+}
+
+html,body,header,
+.view {
+  height: 100vh;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 815px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view  {
+    height: 650px;
+  }
+}
+
+.intro-2 {
+background: url("https://www.subharti.org/images/bank/banking%20Header.jpg")no-repeat center center;    background-size: cover;
+}
+.top-nav-collapse {
+    background-color: #3f51b5 !important;
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #3f51b5 !important;
+    }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #3f51b5!important;
+    }
+}
+
+.card {
+    background-color: rgba(229, 228, 255, 0.2);
+}
+.md-form label {
+    color: #ffffff;
+}
+h6 {
+    line-height: 1.7;
+}
+
+
+.card {
+    margin-top: 30px;
+    /*margin-bottom: -45px;*/
+
+}
+
+.md-form input[type=text]:focus:not([readonly]),
+.md-form input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #8EDEF8;
+    box-shadow: 0 1px 0 0 #8EDEF8;
+}
+.md-form input[type=text]:focus:not([readonly])+label,
+.md-form input[type=password]:focus:not([readonly])+label {
+    color: #8EDEF8;
+}
+
+.md-form .form-control {
+    color: #fff;
+}
+
+#New_Registration {
+    background-color: lightgoldenrodyellow;
+}
+
+.breadcrumbs-section {
+  background-color: #e9ecef;
+}
+
+.home-newsletter{
+  background-color: rgb(78, 78, 158);
+  color: white;
+}
+
+span{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .section-head{
+  margin: 60px;
+} */
+
+.section-head h4{
+  position: relative;
+  padding: 0;
+  color: #F84545;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  font-size: 40px;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+/* .section-head h4 ::before {
+  content: '';
+  width: 500px;
+  height: 1px;
+  background: red ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+} */
+
+.section-head h4 span {
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: #324584; 
+}
+
+.section-head p {
+  color: #0C2F48;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.item {
+  background: #fff;
+  text-align: center;
+  padding: 30px 25px;
+  box-shadow: 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 5px solid rgb(0,0,0,0.07);
+  -webkit-transition: all 0.5 ease 0s;
+  transition: all 0.5 ease 0s;
+}
+
+
+.top_btn {
+  margin-top: 40px;
+} 
+
+p{
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.footer_item_color {
+  color:#fff;
+}
+.footer_head {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.footer_menu {
+  margin-top: 80px;
+}
+.location_icon {
+  margin-top: 80px;
+  color: #fff;
+  font-size: 20px;
+}
+.phone_icon {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+@media (max-width: 454px) {
+  .responsive_block {
+    text-align: center;
+    overflow-x: hidden;
+  }
+}
+.service_page_lists {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+
+#vs_about_row {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+
+#vs_about_front {
+  background-color: rgb(251, 247, 247);
+  padding: 40px;
+}
+
+#vs_about_row_popup {
+  padding-top: 100px;
+  padding: 20px;
+}
+@media (max-width: 454px) {
+  .text-right {
+      margin-left: 315px;
+      margin-top: -50px;
+  }
+  .vs_responsive_block {
+    overflow-x:hidden;
+    text-align: center;
+  }
+  }
+
+  .vs_about_Heading_mp {
+    padding-top: 80px;
+  }
+@media (max-width: 454px) {
+  .row{
+    text-align: center;
+  }
+}
+
+
+
+.top_mp {
+  margin-top: 120px;
+}
