@@ -22,7 +22,7 @@
 	<!-- Left elements-->
 		<div class="container-fluid justify-content-between">
 	    <div class="d-flex">
-	      <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="Login.html">
+	      <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="Login.php">
 	        <img
 	          src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
 	          height="100"
@@ -36,11 +36,11 @@
 
 	<!-- Center elements -->
 	    <ul class="navbar-nav flex-row d-none d-md-flex">
-	    	<li><a class="dropdown-item" href="Home.html">Home</a></li>
-	    	<li><a class="dropdown-item" href="About.html">About</a></li>
-	    	<li><a class="dropdown-item" href="News.html">News</a></li>
-	    	<li><a class="dropdown-item" href="application.html">Application</a></li>
-	    	<li><a class="dropdown-item" href="contact.html">Contact</a></li>
+	    	<li><a class="dropdown-item" href="Home.php">Home</a></li>
+	    	<li><a class="dropdown-item" href="About.php">About</a></li>
+	    	<li><a class="dropdown-item" href="News.php">News</a></li>
+	    	<li><a class="dropdown-item" href="application.php">Application</a></li>
+	    	<li><a class="dropdown-item" href="contact.php">Contact</a></li>
 	    </ul>
 	<!-- Center elements -->
 
@@ -331,16 +331,16 @@
 
 	          <ul class="list-unstyled mb-0">
 	            <li>
-	              <a href="about.html" class="text-white">About</a>
+	              <a href="about.php" class="text-white">About</a>
 	            </li>
 	            <li>
-	              <a href="news.html" class="text-white">News</a>
+	              <a href="news.php" class="text-white">News</a>
 	            </li>
 	            <li>
-	              <a href="application.html" class="text-white">Application</a>
+	              <a href="application.php" class="text-white">Application</a>
 	            </li>
 	            <li>
-	              <a href="logout.html" class="text-white">Log out</a>
+	              <a href="logout.php" class="text-white">Log out</a>
 	            </li>
 	          </ul>
 	        </div>

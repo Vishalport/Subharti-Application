@@ -110,7 +110,7 @@
 
                         <div class="text-center">
                           <button class="btn btn-indigo btn-rounded mt-5">Sign up</button>
-                          <button class="btn btn-indigo btn-rounded mt-5"><a href="Login.html">Log In</a></button>
+                          <button class="btn btn-indigo btn-rounded mt-5"><a href="Login.php">Log In</a></button>
                         </div>
 
 				<!--Login POPUP-->
@@ -118,7 +118,7 @@
                           <h4 class="mt-3 mr-4">
                             <strong>Login Here</strong>
                           </h4>
-                          <button class="btn btn-indigo btn-rounded mt-5"><a href="Login.html">Log In</a></button>
+                          <button class="btn btn-indigo btn-rounded mt-5"><a href="Login.php">Log In</a></button>
                           <h4 class="mt-3 ml-4">
                           </h4>
                         </div>

@@ -4,8 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	
+
 	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 	<!-- Google Fonts -->
@@ -13,81 +12,104 @@
 	<!-- MDB -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
 	
-	<title>Login</title>
+	<title>Subharti University</title>
 </head>
 <body>
-	
-<!-- 	Start Login From -->	
-    <section class="view intro-2">
-      <div class="mask rgba-stylish-strong h-100 d-flex justify-content-center align-items-center">
-        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="row">
-            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-lg-5">
 
-              <!--Form with header-->
-              <div class="card wow fadeIn" data-wow-delay="0.3s">
-                <div class="card-body">
 
-                  <!--Header-->
-                  <div class="form-header purple-gradient">
-                    <h3><i class="fas fa-user mt-2 mb-2"></i> Sign In:</h3>
-                  </div>
+<!-- Navigation bar-->
 
-                  <!--Body-->
-                  <div class="md-form">
-                    <i class="fas fa-user prefix white-text"></i>
-                    <!-- <input type="text" id="orangeForm-name" class="form-control"> -->
-					<select name="user_type" id="user_type">
-						<option value="Select User">Select User</option>
-						<option value="CEO">CEO</option>
-						<option value="VC">VC</option>
-						<option value="Registrar">Registrar</option>
-						<option value="Principle">Principle</option>
-						<option value="HOD">HOD</option>
-						<option value="Coordinator">Coordinator</option>
-						<option value="Faculty">Faculty</option>
-						<option value="Student">Student</option>
-						<option value="Staff">Staff</option>
-					</select>
-                    <!-- <label for="orangeForm-name">Your name</label> -->
-                  </div>
-                  <div class="md-form">
-                    <i class="fas fa-envelope prefix white-text"></i>
-                    <input type="text" id="orangeForm-email" class="form-control">
-                    <label for="orangeForm-email">Username</label>
-                  </div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- Left elements-->
+		<div class="container-fluid justify-content-between">
+	    <div class="d-flex">
+	        <img
+	          src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
+	          height="100"
+	          alt="MDB Logo"
+	          loading="lazy"
+	          style="margin-top: 2px;"
+	        />
+	    </div>
+	<!-- End Left elements -->
 
-                  <div class="md-form">
-                    <i class="fas fa-lock prefix white-text"></i>
-                    <input type="password" id="orangeForm-pass" class="form-control">
-                    <label for="orangeForm-pass">Password</label>
-                  </div>
+	<!-- Center elements -->
+	    <ul class="navbar-nav flex-row d-none d-md-flex">
+	    	<li><a class="nav-link active" href="Home.php">Home</a></li>
+	    	<li><a class="nav-link active" href="About.php">About</a></li>
+	    	<li><a class="nav-link active" href="News.php">News</a></li>
+	    	<li><a class="nav-link active" href="application.php">Application</a></li>
+	    	<li><a class="nav-link active" href="contact.php">Contact</a></li>
+	    </ul>
+	<!-- Center elements -->
 
-                  <div class="text-center">
-                    <button class="btn purple-gradient btn-lg" id="New_Registration">Sign In</button>
-                     <button class="btn purple-gradient btn-lg" id="New_Registration"><a href="Sign_up.html">New Registration</a></button>
-                    <hr>
-					<div class="forget-pwd">
-						<a href="#">Forget Password</a>
-					</div>
-                    <div class="inline-ul text-center d-flex justify-content-center">
-                      <a class="p-2 m-2 fa-lg tw-ic"><i class="fab fa-twitter white-text"></i></a>
-                      <a class="p-2 m-2 fa-lg li-ic"><i class="fab fa-linkedin-in white-text"> </i></a>
-                      <a class="p-2 m-2 fa-lg ins-ic"><i class="fab fa-instagram white-text"> </i></a>
-                    </div>
-                  </div>
+	<!-- Right elements -->
+	    <ul class="navbar-nav flex-row">
+	      <li class="nav-item me-3 me-lg-1">
+	        <a class="nav-link d-sm-flex align-items-sm-center" href="Login.php">
+	          <img
+	            src="https://pngimage.net/wp-content/uploads/2019/05/user-icon-png-free-download-2.png"
+	            class="rounded-circle"
+	            height="60"
+	            alt="Black and White Portrait of a Man"
+	            loading="lazy"
+	          />
+	          <strong class="d-none d-sm-block ms-1">User</strong>
+	        </a>
+	      </li>
+	    </ul>  
+	    <!-- Right elements -->
+	  </div>
+	</nav>
+<!-- End Navigation bar-->
 
-				  
 
-                </div>
-              </div>
+<!--Main Layout-->
+  <main class="top_mp">
 
+    <div class="container">
+
+      <!--Section: Team v.1-->
+      <section class="text-center team-section">
+
+        <!--Grid row-->
+        <div class="row text-center">
+
+          <!--Grid column-->
+          <div class="col-md-12 mb-4" style="margin-top: -100px;">
+
+            <div class="avatar mx-auto">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="img-fluid rounded-circle z-depth-1" alt="First sample avatar image">
             </div>
+            <h3 class="my-3 font-weight-bold">
+              <strong>User NAme</strong>
+            </h3>
+            <h6 class="font-weight-bold teal-text mb-4">Position</h6>
+
+            <!--Facebook-->
+            <a class="p-2 m-2 fa-lg fb-ic">
+              <i class="fab fa-facebook-f grey-text"> </i>
+            </a>
+            <!--Twitter-->
+            <a class="p-2 m-2 fa-lg tw-ic">
+              <i class="fab fa-twitter grey-text"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="p-2 m-2 fa-lg ins-ic">
+              <i class="fab fa-instagram grey-text"> </i>
+            </a>
+
+            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+
           </div>
         </div>
-      </div>
-    </section>
-<!-- End Login From -->
+    </div>
+  </main>
+<!--Main Layout-->
+
 
 
 <!-- Start Start Footer  -->
@@ -180,16 +202,16 @@
 
 	          <ul class="list-unstyled mb-0">
 	            <li>
-	              <a href="about.html" class="text-white">About</a>
+	              <a href="about.php" class="text-white">About</a>
 	            </li>
 	            <li>
-	              <a href="news.html" class="text-white">News</a>
+	              <a href="news.php" class="text-white">News</a>
 	            </li>
 	            <li>
-	              <a href="application.html" class="text-white">Application</a>
+	              <a href="application.php" class="text-white">Application</a>
 	            </li>
 	            <li>
-	              <a href="logout.html" class="text-white">Log out</a>
+	              <a href="logout.php" class="text-white">Log out</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -233,14 +255,9 @@
 <!-- End Footer  -->
 
 </body>
-<script type="js/Login.js"></script>
+<script type="js/Home.js"></script>
 <script
   type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
 ></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
 </html>
