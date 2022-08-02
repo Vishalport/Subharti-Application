@@ -94,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-                <img src="https://pngimage.net/wp-content/uploads/2019/05/communicative-icon-png-1.png" alt=""/>
+                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400"" alt=""/>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
                 <h5>Swami Vivekanada Subharti University</h5>
