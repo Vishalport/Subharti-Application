@@ -25,108 +25,376 @@
 
 
 <!-- Navigation bar-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- Container wrapper -->
+	<div class="container">
+		<!-- Navbar brand -->
+		<a class="navbar-brand me-2" href="https://mdbgo.com/">
+		<img
+			src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
+			height="100"
+			alt="MDB Logo"
+			loading="lazy"
+			style="margin-top: -1px;"
+		/>
+		</a>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Container wrapper -->
-  <div class="container">
-    <!-- Navbar brand -->
-    <a class="navbar-brand me-2" href="https://mdbgo.com/">
-      <img
-        src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
-        height="100"
-        alt="MDB Logo"
-        loading="lazy"
-        style="margin-top: -1px;"
-      />
-    </a>
+		<!-- Toggle button -->
+		<button
+		class="navbar-toggler"
+		type="button"
+		data-mdb-toggle="collapse"
+		data-mdb-target="#navbarButtonsExample"
+		aria-controls="navbarButtonsExample"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+		>
+		<i class="fas fa-bars"></i>
+		</button>
 
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarButtonsExample"
-      aria-controls="navbarButtonsExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+		<!-- Collapsible wrapper -->
+		<div class="collapse navbar-collapse" id="navbarButtonsExample">
+		<!-- Left links -->
+		<ul class="navbar-nav me-auto mb-5 mb-lg-0">
+			<li class="nav-item"><a class="nav-link" href="#">Main Dashboard</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">News</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Application</a></li>
+			<li class="nav-item"><a class="nav-link" href="#"></a></li>
+		</ul>
+		<!-- Left links -->
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarButtonsExample">
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-		  <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-		  <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-		  <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-		  <li class="nav-item"><a class="nav-link" href="#">Application</a></li>
-      </ul>
-      <!-- Left links -->
-
-      <div class="d-flex align-items-center">
-        <button type="button" class="btn btn-link px-3 me-2">
-          Login
-        </button>
-		<button type="button" class="btn btn-link px-3 me-2">
-          Logout
-        </button>
-        <!-- <button type="button" class="btn btn-primary me-3">
-          Sign up for free
-        </button> -->
-      </div>
-    </div>
-    <!-- Collapsible wrapper -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
+		<div class="d-flex align-items-center">
+			<button type="button" class="btn btn-link px-3 me-2">
+			Login
+			</button>
+			<div class="d-flex align-items-center">
+			<button type="button" class="btn btn-link px-3 me-2">
+			Logout
+			</button>
+			<!-- <button type="button" class="btn btn-primary me-3">
+			Sign up for free
+			</button> -->
+		</div>
+		</div>
+		<!-- Collapsible wrapper -->
+	</div>
+	<!-- Container wrapper -->
+	</nav>
 <!-- End Navigation bar-->
 
 
 <!--Main Layout-->
-  <main class="top_mp">
 
-    <div class="container">
 
-      <!--Section: Team v.1-->
-      <section class="text-center team-section">
+<!-- pending applicaion -->
+	<section class="mb-4">
+      <div class="card">
+        <div class="card-header text-center py-3">
+          <h5 class="mb-0 text-center">
+            <strong>Pending Application</strong>
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover text-nowrap">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Application</th>
+                  <th scope="col">Date/Time</th>
+                  <th scope="col">From</th>
+                  <th scope="col">Last-Date</th>
+                  <th scope="col">Regarding</th>
+                </tr>
+              </thead>
+              <tbody>
+			<!-- number of applicaion -->
+                <tr>
+                  <th scope="row"><a href="#">Application Name</a></th>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>2</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>Ragistar</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>Student</span>
+                    </span>
+                  </td>
+                </tr>
+		<!-- number of applicaion -->
+				<tr>
+                  <th scope="row"><a href="#">Application Name</a></th>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>2</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>Ragistar</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>AICTC</span>
+                    </span>
+                  </td>
+                </tr>
+		<!-- number of applicaion -->
+				<tr>
+                  <th scope="row"><a href="#">Application Name</a></th>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>2</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>Account</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>Money</span>
+                    </span>
+                  </td>
+                </tr>
 
-        <!--Grid row-->
-        <div class="row text-center">
+			<!-- number of applicaion -->
+				<tr>
+                  <th scope="row"><a href="#">Application Name</a></th>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>2</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>Hostel Warden</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>VHR Hostel</span>
+                    </span>
+                  </td>
+                </tr>
 
-          <!--Grid column-->
-          <div class="col-md-12 mb-4" style="margin-top: -100px;">
+				<!-- number of applicaion -->
 
-            <div class="avatar mx-auto">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="img-fluid rounded-circle z-depth-1" alt="First sample avatar image">
-            </div>
-            <h3 class="my-3 font-weight-bold">
-              <strong>User NAme</strong>
-            </h3>
-            <h6 class="font-weight-bold teal-text mb-4">Position</h6>
-
-            <!--Facebook-->
-            <a class="p-2 m-2 fa-lg fb-ic">
-              <i class="fab fa-facebook-f grey-text"> </i>
-            </a>
-            <!--Twitter-->
-            <a class="p-2 m-2 fa-lg tw-ic">
-              <i class="fab fa-twitter grey-text"> </i>
-            </a>
-            <!--Instagram-->
-            <a class="p-2 m-2 fa-lg ins-ic">
-              <i class="fab fa-instagram grey-text"> </i>
-            </a>
-
-            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
+				<tr>
+                  <th scope="row"><a href="#">Application Name</a></th>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>2</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>VC office</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>Cultural Program</span>
+                    </span>
+                  </td>
+                </tr>
+				<!-- number of applicaion -->
+				<tr>
+                  <th scope="row"><a href="#">Application Name</a></th>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>2</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-up me-1"></i><span>Collage Principal</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-danger">
+                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span class="text-success">
+                      <i class="fas fa-caret-down me-1"></i
+                        ><span>Collage invitation</span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-    </div>
-  </main>
+      </div>
+    </section>
+<!-- End pending applicaion -->
+
+<!--------------------------------------------------------------------------------------------------- -->
+
+<!-- start Button Section  -->
+<section>
+<!-- CEO POST -->
+	<div class="row">
+	<div class="col-xl-3 col-sm-6 col-12 mb-4">
+		<div class="card">
+		<div class="card-body">
+			<div class="d-flex justify-content-between px-md-1">
+			<div class="align-self-center">
+			<i><img 
+			src="https://www.subharti.org/images/The%20CEO.jpg" alt=""
+			height="80"
+			style="margin: 0;"
+			></i>
+			</div>
+			<div class="text-end">
+				<h4>Dr. Shalya Raj: CEO Post</h4>
+				<p class="mb-0"><a href="#">Click here</a></p>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+<!-- VICE-CHANCELLOR Post -->
+	<div class="col-xl-3 col-sm-6 col-12 mb-4">
+		<div class="card">
+		<div class="card-body">
+			<div class="d-flex justify-content-between px-md-1">
+			<div class="align-self-center">
+			<i><img 
+			src="https://www.subharti.org/images/website%20images%20500x500.png" alt=""
+			height="80"
+			style="margin: 0;"
+			></i>
+			</div>
+			<div class="text-end">
+				<h4>(Dr.) G.K. Thapliyal: Vice-Chancellor Post</h4>
+				<p class="mb-0"><a href="#">Click here</a></p>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+<!-- REGISTRAR Post -->
+	<div class="col-xl-3 col-sm-6 col-12 mb-4">
+		<div class="card">
+		<div class="card-body">
+			<div class="d-flex justify-content-between px-md-1">
+			<div class="align-self-center">
+			<i><img 
+			src="https://www.subharti.org/images/Registrar.jpg" alt=""
+			height="80"
+			style="margin: 0;"
+			></i>
+			</div>
+			<div class="text-end">
+				<h4>Dr. Abhay: Registar Post</h4>
+				<p class="mb-0"><a href="#">Click here</a></p>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+<!-- CHANCELLOR POST -->
+	<div class="col-xl-3 col-sm-6 col-12 mb-4">
+		<div class="card">
+		<div class="card-body">
+			<div class="d-flex justify-content-between px-md-1">
+			<div class="align-self-center">
+			<i><img 
+			src="https://www.subharti.org/images/Chancellor.jpg" alt=""
+			height="80"
+			style="margin: 0;"
+			></i>
+			</div>
+			<div class="text-end">
+				<h4>Mrs. Stuti Narain(IAS): Chancellor Post</h4>
+				<p class="mb-0"><a href="#">Click here</a></p>
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+<!-- End button section -->
+
 <!--Main Layout-->
 
 
@@ -176,26 +444,6 @@
 	    <section class="">
 	      <!--Grid row-->
 	      <div class="row">
-	        <!--Grid column-->
-	        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-	          <h5 class="text-uppercase">Technology Used</h5>
-
-	          <ul class="list-unstyled mb-0">
-	            <li>
-	              <a href="#!" class="text-white">HTML</a>
-	            </li>
-	            <li>
-	              <a href="#!" class="text-white">CSS</a>
-	            </li>
-	            <li>
-	              <a href="#!" class="text-white">JAVA SCRIPT</a>
-	            </li>
-	            <li>
-	              <a href="#!" class="text-white">MBD</a>
-	            </li>
-	          </ul>
-	        </div>
-	        <!--Grid column-->
 
 	        <!--Grid column-->
 	        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -221,13 +469,13 @@
 
 	          <ul class="list-unstyled mb-0">
 	            <li>
-	              <a href="about.php" class="text-white">About</a>
+	              <a href="about.php" class="text-white">Application</a>
 	            </li>
 	            <li>
 	              <a href="news.php" class="text-white">News</a>
 	            </li>
 	            <li>
-	              <a href="application.php" class="text-white">Application</a>
+	              <a href="application.php" class="text-white">Apply</a>
 	            </li>
 	            <li>
 	              <a href="logout.php" class="text-white">Log out</a>
@@ -238,14 +486,14 @@
 
 	        <!--Grid column-->
 	        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-	          <h5 class="text-uppercase">Social</h5>
+	          <h6 class="text-uppercase">OUR COLLEGES</h6>
 
 	          <ul class="list-unstyled mb-0">
 	            <li>
 	              <a href="#!" class="text-white">Instagram</a>
 	            </li>
 	            <li>
-	              <a href="#!" class="text-white">facebook</a>
+	              <p>Instagram</p>
 	            </li>
 	            <li>
 	              <a href="#!" class="text-white">Twitter</a>

@@ -25,64 +25,64 @@
 
 
 <!-- Navigation bar-->
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Container wrapper -->
-  <div class="container">
-    <!-- Navbar brand -->
-    <a class="navbar-brand me-2" href="https://mdbgo.com/">
-      <img
-        src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
-        height="100"
-        alt="MDB Logo"
-        loading="lazy"
-        style="margin-top: -1px;"
-      />
-    </a>
 
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarButtonsExample"
-      aria-controls="navbarButtonsExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- Container wrapper -->
+	<div class="container">
+		<!-- Navbar brand -->
+		<a class="navbar-brand me-2" href="https://mdbgo.com/">
+		<img
+			src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
+			height="100"
+			alt="MDB Logo"
+			loading="lazy"
+			style="margin-top: -1px;"
+		/>
+		</a>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarButtonsExample">
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-5 mb-lg-0">
-		  <li class="nav-item"><a class="nav-link" href="/">Dashboard</a></li>
-		  <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-		  <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-		  <li class="nav-item"><a class="nav-link" href="#">Application</a></li>
-		  <li class="nav-item"><a class="nav-link" href="#"></a></li>
-      </ul>
-      <!-- Left links -->
+		<!-- Toggle button -->
+		<button
+		class="navbar-toggler"
+		type="button"
+		data-mdb-toggle="collapse"
+		data-mdb-target="#navbarButtonsExample"
+		aria-controls="navbarButtonsExample"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+		>
+		<i class="fas fa-bars"></i>
+		</button>
 
-      <div class="d-flex align-items-center">
-        <button type="button" class="btn btn-link px-3 me-2">
-          Login
-        </button>
+		<!-- Collapsible wrapper -->
+		<div class="collapse navbar-collapse" id="navbarButtonsExample">
+		<!-- Left links -->
+		<ul class="navbar-nav me-auto mb-5 mb-lg-0">
+			<li class="nav-item"><a class="nav-link" href="/">Dashboard</a></li>
+			<li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">News</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Application</a></li>
+			<li class="nav-item"><a class="nav-link" href="#"></a></li>
+		</ul>
+		<!-- Left links -->
+
 		<div class="d-flex align-items-center">
-        <button type="button" class="btn btn-link px-3 me-2">
-          Logout
-        </button>
-        <!-- <button type="button" class="btn btn-primary me-3">
-          Sign up for free
-        </button> -->
-      </div>
-    </div>
-    <!-- Collapsible wrapper -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
+			<button type="button" class="btn btn-link px-3 me-2">
+			Login
+			</button>
+			<div class="d-flex align-items-center">
+			<button type="button" class="btn btn-link px-3 me-2">
+			Logout
+			</button>
+			<!-- <button type="button" class="btn btn-primary me-3">
+			Sign up for free
+			</button> -->
+		</div>
+		</div>
+		<!-- Collapsible wrapper -->
+	</div>
+	<!-- Container wrapper -->
+	</nav>
+
 <!-- End Navigation bar-->
 
 
