@@ -3,7 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="..\..\style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<script
+  	type="text/javascript"
+  	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+	></script>
+
 
 	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
@@ -19,48 +26,60 @@
 
 <!-- Navigation bar-->
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<!-- Left elements-->
-		<div class="container-fluid justify-content-between">
-	    <div class="d-flex">
-	        <img
-	          src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
-	          height="100"
-	          alt="MDB Logo"
-	          loading="lazy"
-	          style="margin-top: 2px;"
-	        />
-	    </div>
-	<!-- End Left elements -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="https://mdbgo.com/">
+      <img
+        src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
+        height="100"
+        alt="MDB Logo"
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
 
-	<!-- Center elements -->
-	    <ul class="navbar-nav flex-row d-none d-md-flex">
-			<li><a class="dropdown-item" href="Home.php">Home</a></li>
-	    	<li><a class="dropdown-item" href="About.php">About</a></li>
-	    	<li><a class="dropdown-item" href="News.php">News</a></li>
-	    	<li><a class="dropdown-item" href="application.php">Application</a></li>
-	    	<li><a class="dropdown-item" href="contact.php">Contact</a></li>
-	    </ul>
-	<!-- Center elements -->
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
 
-	<!-- Right elements -->
-	    <ul class="navbar-nav flex-row">
-	      <li class="nav-item me-3 me-lg-1">
-	        <a class="nav-link d-sm-flex align-items-sm-center" href="#">
-	          <img
-	            src="https://pngimage.net/wp-content/uploads/2019/05/user-icon-png-free-download-2.png"
-	            class="rounded-circle"
-	            height="60"
-	            alt="Black and White Portrait of a Man"
-	            loading="lazy"
-	          />
-	          <strong class="d-none d-sm-block ms-1">User</strong>
-	        </a>
-	      </li>
-	    </ul>  
-	    <!-- Right elements -->
-	  </div>
-	</nav>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+		  <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#">Application</a></li>
+      </ul>
+      <!-- Left links -->
+
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-link px-3 me-2">
+          Login
+        </button>
+		<button type="button" class="btn btn-link px-3 me-2">
+          Logout
+        </button>
+        <!-- <button type="button" class="btn btn-primary me-3">
+          Sign up for free
+        </button> -->
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
 <!-- End Navigation bar-->
 
 
@@ -202,16 +221,16 @@
 
 	          <ul class="list-unstyled mb-0">
 	            <li>
-	              <a href="about.html" class="text-white">About</a>
+	              <a href="about.php" class="text-white">About</a>
 	            </li>
 	            <li>
-	              <a href="news.html" class="text-white">News</a>
+	              <a href="news.php" class="text-white">News</a>
 	            </li>
 	            <li>
-	              <a href="application.html" class="text-white">Application</a>
+	              <a href="application.php" class="text-white">Application</a>
 	            </li>
 	            <li>
-	              <a href="logout.html" class="text-white">Log out</a>
+	              <a href="logout.php" class="text-white">Log out</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -256,8 +275,8 @@
 
 </body>
 <script type="js/Home.js"></script>
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
-></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>

@@ -364,8 +364,11 @@ p{
   }
 }
 
-
-
 .top_mp {
   margin-top: 120px;
+}
+
+#nav_icon a {
+  background-color: #0C2F48;
+
 }

@@ -64,9 +64,7 @@
                   </div>
 
                   <div class="text-center">
-                    <button class="btn purple-gradient btn-lg" id="New_Registration">Sign In</button>
-                     <button class="btn purple-gradient btn-lg" id="New_Registration"><a href="Sign_up.php">New Registration</a></button>
-                    <hr>
+                    <button class="btn purple-gradient btn-lg" id="New_Registration">Sign In</button>                    <hr>
 					<div class="forget-pwd">
 						<a href="#">Forget Password</a>
 					</div>
