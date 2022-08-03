@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<script
   	type="text/javascript"
   	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
 	></script>
+	<script type="text/javascript"src="dashboard.js"></script>
 
 
 	<!-- Font Awesome -->
@@ -23,377 +24,457 @@
 </head>
 <body>
 
-
-<!-- Navigation bar-->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<!-- Container wrapper -->
-	<div class="container">
-		<!-- Navbar brand -->
-		<a class="navbar-brand me-2" href="https://mdbgo.com/">
-		<img
-			src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
-			height="100"
-			alt="MDB Logo"
-			loading="lazy"
-			style="margin-top: -1px;"
-		/>
-		</a>
-
-		<!-- Toggle button -->
-		<button
-		class="navbar-toggler"
-		type="button"
-		data-mdb-toggle="collapse"
-		data-mdb-target="#navbarButtonsExample"
-		aria-controls="navbarButtonsExample"
-		aria-expanded="false"
-		aria-label="Toggle navigation"
-		>
-		<i class="fas fa-bars"></i>
-		</button>
-
-		<!-- Collapsible wrapper -->
-		<div class="collapse navbar-collapse" id="navbarButtonsExample">
-		<!-- Left links -->
-		<ul class="navbar-nav me-auto mb-5 mb-lg-0">
-			<li class="nav-item"><a class="nav-link" href="#">Main Dashboard</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">News</a></li>
-			<li class="nav-item"><a class="nav-link" href="#">Application</a></li>
-			<li class="nav-item"><a class="nav-link" href="#"></a></li>
-		</ul>
-		<!-- Left links -->
-
-		<div class="d-flex align-items-center">
-			<button type="button" class="btn btn-link px-3 me-2">
-			Login
-			</button>
-			<div class="d-flex align-items-center">
-			<button type="button" class="btn btn-link px-3 me-2">
-			Logout
-			</button>
-			<!-- <button type="button" class="btn btn-primary me-3">
-			Sign up for free
-			</button> -->
-		</div>
-		</div>
-		<!-- Collapsible wrapper -->
-	</div>
-	<!-- Container wrapper -->
-	</nav>
-<!-- End Navigation bar-->
-
-
-<!--Main Layout-->
-
-
-<!-- pending applicaion -->
-	<section class="mb-4">
-      <div class="card">
-        <div class="card-header text-center py-3">
-          <h5 class="mb-0 text-center">
-            <strong>Pending Application</strong>
-          </h5>
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-hover text-nowrap">
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Application</th>
-                  <th scope="col">Date/Time</th>
-                  <th scope="col">From</th>
-                  <th scope="col">Last-Date</th>
-                  <th scope="col">Regarding</th>
-                </tr>
-              </thead>
-              <tbody>
-			<!-- number of applicaion -->
-                <tr>
-                  <th scope="row"><a href="#">Application Name</a></th>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>2</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>Ragistar</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>Student</span>
-                    </span>
-                  </td>
-                </tr>
-		<!-- number of applicaion -->
-				<tr>
-                  <th scope="row"><a href="#">Application Name</a></th>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>2</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>Ragistar</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>AICTC</span>
-                    </span>
-                  </td>
-                </tr>
-		<!-- number of applicaion -->
-				<tr>
-                  <th scope="row"><a href="#">Application Name</a></th>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>2</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>Account</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>Money</span>
-                    </span>
-                  </td>
-                </tr>
-
-			<!-- number of applicaion -->
-				<tr>
-                  <th scope="row"><a href="#">Application Name</a></th>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>2</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>Hostel Warden</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>VHR Hostel</span>
-                    </span>
-                  </td>
-                </tr>
-
-				<!-- number of applicaion -->
-
-				<tr>
-                  <th scope="row"><a href="#">Application Name</a></th>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>2</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>VC office</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>Cultural Program</span>
-                    </span>
-                  </td>
-                </tr>
-				<!-- number of applicaion -->
-				<tr>
-                  <th scope="row"><a href="#">Application Name</a></th>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>2</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-up me-1"></i><span>Collage Principal</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-danger">
-                      <i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-                    </span>
-                  </td>
-                  <td>
-                    <span class="text-success">
-                      <i class="fas fa-caret-down me-1"></i
-                        ><span>Collage invitation</span>
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+<!--Main Navigation-->
+<header>
+  <!-- Sidebar -->
+  <nav
+       id="sidebarMenu"
+       class="collapse d-lg-block sidebar collapse bg-white"
+       >
+    <div class="position-sticky" id="nav_mp_side">
+      <div class="list-group list-group-flush mx-3 mt-4">
+        <a
+           href="#"
+           class="list-group-item list-group-item-action py-2 ripple"
+           aria-current="true"
+           >
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i
+            ><span>Main dashboard</span>
+        </a>
+        <a
+           href="#"
+           class="list-group-item list-group-item-action py-2 ripple"
+           ><i class="fas fa-envelope-open fa-fw me-3"></i><span>Application</span></a
+          >
+        <a
+           href="#"
+           class="list-group-item list-group-item-action py-2 ripple"
+           ><i class="fas fa-newspaper fa-fw me-3"></i
+          ><span>News</span></a
+          >
+        <a
+           href="#"
+           class="list-group-item list-group-item-action py-2 ripple"
+           >
+          <i class="fas fa-key fa-fw me-3"></i><span>Password</span>
+        </a>
+        <a
+           href="#"
+           class="list-group-item list-group-item-action py-2 ripple"
+           ><i class="fas fa-search fa-fw me-3"></i><span>Subharti.org</span></a
+          >
+        <a
+           href="#"
+           class="list-group-item list-group-item-action py-2 ripple"
+           ><i class="fas fa-sign-out fa-fw me-3"></i><span>Log Out</span></a
+          >
       </div>
-    </section>
-<!-- End pending applicaion -->
+    </div>
+  </nav>
+  <!-- Sidebar -->
 
-<!--------------------------------------------------------------------------------------------------- -->
+  <!-- Navbar -->
+  <nav
+       id="main-navbar"
+       class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+       >
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#sidebarMenu"
+              aria-controls="sidebarMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              >
+        <i class="fas fa-bars"></i>
+      </button>
 
-<!-- start Button Section  -->
-<section>
-<!-- CEO POST -->
-	<div class="row">
-	<div class="col-xl-3 col-sm-6 col-12 mb-4">
-		<div class="card">
-		<div class="card-body">
-			<div class="d-flex justify-content-between px-md-1">
-			<div class="align-self-center">
-			<i><img 
-			src="https://www.subharti.org/images/The%20CEO.jpg" alt=""
-			height="80"
-			style="margin: 0;"
-			></i>
-			</div>
-			<div class="text-end">
-				<h4>Dr. Shalya Raj: CEO Post</h4>
-				<p class="mb-0"><a href="#">Click here</a></p>
-			</div>
-			</div>
-		</div>
-		</div>
-	</div>
-<!-- VICE-CHANCELLOR Post -->
-	<div class="col-xl-3 col-sm-6 col-12 mb-4">
-		<div class="card">
-		<div class="card-body">
-			<div class="d-flex justify-content-between px-md-1">
-			<div class="align-self-center">
-			<i><img 
-			src="https://www.subharti.org/images/website%20images%20500x500.png" alt=""
-			height="80"
-			style="margin: 0;"
-			></i>
-			</div>
-			<div class="text-end">
-				<h4>(Dr.) G.K. Thapliyal: Vice-Chancellor Post</h4>
-				<p class="mb-0"><a href="#">Click here</a></p>
-			</div>
-			</div>
-		</div>
-		</div>
-	</div>
-<!-- REGISTRAR Post -->
-	<div class="col-xl-3 col-sm-6 col-12 mb-4">
-		<div class="card">
-		<div class="card-body">
-			<div class="d-flex justify-content-between px-md-1">
-			<div class="align-self-center">
-			<i><img 
-			src="https://www.subharti.org/images/Registrar.jpg" alt=""
-			height="80"
-			style="margin: 0;"
-			></i>
-			</div>
-			<div class="text-end">
-				<h4>Dr. Abhay: Registar Post</h4>
-				<p class="mb-0"><a href="#">Click here</a></p>
-			</div>
-			</div>
-		</div>
-		</div>
-	</div>
+<!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img
+             src="https://www.justmbbs.com/img/college/uttar-pradesh/subharti-medical-college-meerut-logo.jpg"
+             height="60"
+             alt=""
+             loading="lazy"
+             />
+      </a>
+<!-- End Logo -->
 
-<!-- CHANCELLOR POST -->
-	<div class="col-xl-3 col-sm-6 col-12 mb-4">
+<!-- Icon Dropdown With Profile  -->
+      <ul class="navbar-nav ms-auto d-flex flex-row">
+        <li class="nav-item dropdown">
+          <a
+             class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+             href="#"
+             id="navbarDropdown"
+             role="button"
+             data-mdb-toggle="dropdown"
+             aria-expanded="false"
+             >
+          </a>
+          <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdown"
+              >
+          </ul>
+        </li>
+
+        <!-- Avatar -->
+        <li class="nav-item dropdown">
+          <a
+             class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center"
+             href="#"
+             id="navbarDropdownMenuLink"
+             role="button"
+             data-mdb-toggle="dropdown"
+             aria-expanded="false"
+             >
+            <img
+                 src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg"
+                 class="rounded-circle"
+                 height="40"
+                 alt=""
+                 loading="lazy"
+                 />
+          </a>
+          <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuLink"
+              >
+            <li><a class="dropdown-item" href="#">My profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+	<main style="margin-top: 58px" id="nav_mp">
+	<div class="container pt-4">
+
+	<!-- pending applicaion -->
+		<section class="mb-4">
 		<div class="card">
-		<div class="card-body">
-			<div class="d-flex justify-content-between px-md-1">
-			<div class="align-self-center">
-			<i><img 
-			src="https://www.subharti.org/images/Chancellor.jpg" alt=""
-			height="80"
-			style="margin: 0;"
-			></i>
+			<div class="card-header text-center py-3">
+			<h5 class="mb-0 text-center">
+				<strong>Pending Application</strong>
+			</h5>
 			</div>
-			<div class="text-end">
-				<h4>Mrs. Stuti Narain(IAS): Chancellor Post</h4>
-				<p class="mb-0"><a href="#">Click here</a></p>
+			<div class="card-body">
+			<div class="table-responsive">
+				<table class="table table-hover text-nowrap">
+				<thead>
+					<tr>
+					<th scope="col"></th>
+					<th scope="col">Application</th>
+					<th scope="col">Date/Time</th>
+					<th scope="col">From</th>
+					<th scope="col">Last-Date</th>
+					<th scope="col">Regarding</th>
+					</tr>
+				</thead>
+				<tbody>
+				<!-- number of applicaion -->
+					<tr>
+					<th scope="row"><a href="#">Application Name</a></th>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-down me-1"></i
+							><span>2</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>Ragistar</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-down me-1"></i
+							><span>Student</span>
+						</span>
+					</td>
+					</tr>
+			<!-- number of applicaion -->
+					<tr>
+					<th scope="row"><a href="#">Application Name</a></th>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-down me-1"></i
+							><span>2</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>Ragistar</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-down me-1"></i
+							><span>AICTC</span>
+						</span>
+					</td>
+					</tr>
+			<!-- number of applicaion -->
+					<tr>
+					<th scope="row"><a href="#">Application Name</a></th>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-down me-1"></i
+							><span>2</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>Account</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-down me-1"></i
+							><span>Money</span>
+						</span>
+					</td>
+					</tr>
+
+				<!-- number of applicaion -->
+					<tr>
+					<th scope="row"><a href="#">Application Name</a></th>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-down me-1"></i
+							><span>2</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>Hostel Warden</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-down me-1"></i
+							><span>VHR Hostel</span>
+						</span>
+					</td>
+					</tr>
+
+					<!-- number of applicaion -->
+
+					<tr>
+					<th scope="row"><a href="#">Application Name</a></th>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-down me-1"></i
+							><span>2</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>VC office</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-down me-1"></i
+							><span>Cultural Program</span>
+						</span>
+					</td>
+					</tr>
+					<!-- number of applicaion -->
+					<tr>
+					<th scope="row"><a href="#">Application Name</a></th>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-down me-1"></i
+							><span>2</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-up me-1"></i><span>Collage Principal</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-danger">
+						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
+						</span>
+					</td>
+					<td>
+						<span class="text-success">
+						<i class="fas fa-caret-down me-1"></i
+							><span>Collage invitation</span>
+						</span>
+					</td>
+					</tr>
+				</tbody>
+				</table>
 			</div>
 			</div>
 		</div>
-		</div>
-	</div>
-</section>
-<!-- End button section -->
+		</section>
+	<!-- End pending applicaion -->
+
+	<!--------------------------------------------------------------------------------------------------- -->
+
+	<!-- start Post Section  -->
+		<section>
+		<!-- CEO POST -->
+			<div class="row">
+			<div class="col-xl-3 col-sm-6 col-12 mb-4">
+				<div class="card">
+				<div class="card-body">
+					<div class="d-flex justify-content-between px-md-1">
+					<div class="align-self-center">
+					<i><img 
+					src="https://www.subharti.org/images/The%20CEO.jpg" alt=""
+					height="80"
+					style="margin: 0;"
+					></i>
+					</div>
+					<div class="text-end">
+						<h4>Dr. Shalya Raj: CEO Post</h4>
+						<p class="mb-0"><a href="#">Click here</a></p>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		<!-- CEO POST -->
+
+		<!-- VICE-CHANCELLOR Post -->
+			<div class="col-xl-3 col-sm-6 col-12 mb-4">
+				<div class="card">
+				<div class="card-body">
+					<div class="d-flex justify-content-between px-md-1">
+					<div class="align-self-center">
+					<i><img 
+					src="https://www.subharti.org/images/website%20images%20500x500.png" alt=""
+					height="80"
+					style="margin: 0;"
+					></i>
+					</div>
+					<div class="text-end">
+						<h4>(Dr.) G.K. Thapliyal: Vice-Chancellor Post</h4>
+						<p class="mb-0"><a href="#">Click here</a></p>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		<!-- VICE-CHANCELLOR Post -->
+
+		<!-- REGISTRAR Post -->
+			<div class="col-xl-3 col-sm-6 col-12 mb-4">
+				<div class="card">
+				<div class="card-body">
+					<div class="d-flex justify-content-between px-md-1">
+					<div class="align-self-center">
+					<i><img 
+					src="https://www.subharti.org/images/Registrar.jpg" alt=""
+					height="80"
+					style="margin: 0;"
+					></i>
+					</div>
+					<div class="text-end">
+						<h4>Dr. Abhay: Registar Post</h4>
+						<p class="mb-0"><a href="#">Click here</a></p>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		<!-- REGISTRAR Post -->
+
+		<!-- CHANCELLOR POST -->
+			<div class="col-xl-3 col-sm-6 col-12 mb-4">
+				<div class="card">
+				<div class="card-body">
+					<div class="d-flex justify-content-between px-md-1">
+					<div class="align-self-center">
+					<i><img 
+					src="https://www.subharti.org/images/Chancellor.jpg" alt=""
+					height="80"
+					style="margin: 0;"
+					></i>
+					</div>
+					<div class="text-end">
+						<h4>Mrs. Stuti Narain(IAS): Chancellor Post</h4>
+						<p class="mb-0"><a href="#">Click here</a></p>
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		<!-- CHANCELLOR POST -->
+		</section>
+	<!-- End Post section -->
 
 <!--Main Layout-->
 
@@ -518,8 +599,7 @@
 	  </div>
 	  <!-- Copyright -->
 	</footer>
-
-<!-- End Footer  -->
+<!-- End Footer -->
 
 </body>
 <script type="js/Home.js"></script>
