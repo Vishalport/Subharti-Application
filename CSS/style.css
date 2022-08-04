@@ -213,7 +213,8 @@ h6 {
 }
 
 .md-form .form-control {
-    color: #fff;
+    /* color: #fff; */
+    color: black;
 }
 
 #New_Registration {

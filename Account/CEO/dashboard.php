@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['CeoLogin']))
+    header('Location: ../../Login.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,7 +70,7 @@
            ><i class="fas fa-search fa-fw me-3"></i><span>Subharti.org</span></a
           >
         <a
-           href="#"
+           href="Logout.php"
            class="list-group-item list-group-item-action py-2 ripple"
            ><i class="fas fa-sign-out fa-fw me-3"></i><span>Log Out</span></a
           >
@@ -147,7 +153,7 @@
               >
             <li><a class="dropdown-item" href="#">My profile</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <li><a class="dropdown-item" href="Logout.php">Logout</a></li>
           </ul>
         </li>
       </ul>
