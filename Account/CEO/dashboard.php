@@ -40,7 +40,7 @@
     <div class="position-sticky" id="nav_mp_side">
       <div class="list-group list-group-flush mx-3 mt-4">
         <a
-           href="#"
+           href="dashboard.php"
            class="list-group-item list-group-item-action py-2 ripple"
            aria-current="true"
            >
@@ -48,7 +48,7 @@
             ><span>Main dashboard</span>
         </a>
         <a
-           href="#"
+           href="Application.php"
            class="list-group-item list-group-item-action py-2 ripple"
            ><i class="fas fa-envelope-open fa-fw me-3"></i><span>Application</span></a
           >
@@ -64,13 +64,13 @@
            >
           <i class="fas fa-key fa-fw me-3"></i><span>Password</span>
         </a>
+		<a
+        href="http://192.168.60.4:90/"
+        class="list-group-item list-group-item-action py-2 ripple"
+        ><i class="fas fa-search fa-fw me-3"></i><span>Subharti ERP</span></a
+        >
         <a
-           href="#"
-           class="list-group-item list-group-item-action py-2 ripple"
-           ><i class="fas fa-search fa-fw me-3"></i><span>Subharti.org</span></a
-          >
-        <a
-           href="Logout.php"
+           href="../../Logout.php"
            class="list-group-item list-group-item-action py-2 ripple"
            ><i class="fas fa-sign-out fa-fw me-3"></i><span>Log Out</span></a
           >
@@ -153,7 +153,7 @@
               >
             <li><a class="dropdown-item" href="#">My profile</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="Logout.php">Logout</a></li>
+            <li><a class="dropdown-item" href="../../Logout.php">Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -162,7 +162,7 @@
   </nav>
   <!-- Navbar -->
 </header>
-<!--Main Navigation-->
+<!--Main End Navigation-->
 
 <!--Main layout-->
 	<main style="margin-top: 58px" id="nav_mp">
@@ -388,7 +388,6 @@
 	<!-- End pending applicaion -->
 
 	<!--------------------------------------------------------------------------------------------------- -->
-
 	<!-- start Post Section  -->
 		<section>
 		<!-- CEO POST -->
@@ -400,19 +399,17 @@
 					<div class="align-self-center">
 					<i><img 
 					src="https://www.subharti.org/images/The%20CEO.jpg" alt=""
-					height="80"
-					style="margin: 0;"
+					height="200"
+					style="margin: 0;
+					border-radius: 50%;"
 					></i>
-					</div>
-					<div class="text-end">
-						<h4>Dr. Shalya Raj: CEO Post</h4>
-						<p class="mb-0"><a href="#">Click here</a></p>
 					</div>
 					</div>
 				</div>
 				</div>
 			</div>
 		<!-- CEO POST -->
+	<!--------------------------------------------------------------------------------------------------- -->
 
 		<!-- VICE-CHANCELLOR Post -->
 			<div class="col-xl-3 col-sm-6 col-12 mb-4">
@@ -422,20 +419,17 @@
 					<div class="align-self-center">
 					<i><img 
 					src="https://www.subharti.org/images/website%20images%20500x500.png" alt=""
-					height="80"
-					style="margin: 0;"
+					height="200"
+					style="margin: 0;
+					border-radius: 50%;"
 					></i>
-					</div>
-					<div class="text-end">
-						<h4>(Dr.) G.K. Thapliyal: Vice-Chancellor Post</h4>
-						<p class="mb-0"><a href="#">Click here</a></p>
 					</div>
 					</div>
 				</div>
 				</div>
 			</div>
 		<!-- VICE-CHANCELLOR Post -->
-
+	<!--------------------------------------------------------------------------------------------------- -->
 		<!-- REGISTRAR Post -->
 			<div class="col-xl-3 col-sm-6 col-12 mb-4">
 				<div class="card">
@@ -444,13 +438,10 @@
 					<div class="align-self-center">
 					<i><img 
 					src="https://www.subharti.org/images/Registrar.jpg" alt=""
-					height="80"
-					style="margin: 0;"
+					height="200"
+					style="margin: 0;
+					border-radius: 50%;"
 					></i>
-					</div>
-					<div class="text-end">
-						<h4>Dr. Abhay: Registar Post</h4>
-						<p class="mb-0"><a href="#">Click here</a></p>
 					</div>
 					</div>
 				</div>
@@ -466,13 +457,10 @@
 					<div class="align-self-center">
 					<i><img 
 					src="https://www.subharti.org/images/Chancellor.jpg" alt=""
-					height="80"
-					style="margin: 0;"
+					height="200"
+					style="margin: 0;
+					border-radius: 50%;"
 					></i>
-					</div>
-					<div class="text-end">
-						<h4>Mrs. Stuti Narain(IAS): Chancellor Post</h4>
-						<p class="mb-0"><a href="#">Click here</a></p>
 					</div>
 					</div>
 				</div>
@@ -485,6 +473,20 @@
 <!--Main Layout-->
 
 
+<!-- Start Notice text -->
+	<p class="note note-primary">
+	<strong>Note primary:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+	Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus
+	delectus placeat illo rem id nisi consequatur esse, sint perspiciatis soluta porro?
+	</p>
+
+	<p class="note note-secondary">
+	<strong>Note secondary:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing
+	elit. Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui
+	necessitatibus delectus placeat illo rem id nisi consequatur esse, sint perspiciatis
+	soluta porro?
+	</p>
+<!-- End text area -->
 
 <!-- Start Start Footer  -->
 	<footer class="bg-dark text-center text-white">
