@@ -1,3 +1,7 @@
+<?php
+	$page = "homepage.php";
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +23,7 @@
 	<!-- MDB -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
 	
-	<title>Subharti University</title>
+	<title>Subharti Application</title>
 </head>
 <body>
 
@@ -57,8 +61,8 @@
 		<div class="collapse navbar-collapse" id="navbarButtonsExample">
 		<!-- Left links -->
 		<ul class="navbar-nav me-auto mb-5 mb-lg-0">
-			<li class="nav-item"><a class="nav-link" href="/">Dashboard</a></li>
-			<li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+			<li class="nav-item"><a class="nav-link" onclick="DashboardBtn_Clicked()">Dashboard</a></li>
+			<li class="nav-item"><a class="nav-link" onclick="AboutBtn_Clicked()">About</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">News</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">Application</a></li>
 			<li class="nav-item"><a class="nav-link" href="#"></a></li>
@@ -66,16 +70,10 @@
 		<!-- Left links -->
 
 		<div class="d-flex align-items-center">
-			<button type="button" class="btn btn-link px-3 me-2">
+			<button type="button" class="btn btn-link px-3 me-2" onclick="LoginBtn_Clicked()">
 			Login
 			</button>
 			<div class="d-flex align-items-center">
-			<button type="button" class="btn btn-link px-3 me-2">
-			Logout
-			</button>
-			<!-- <button type="button" class="btn btn-primary me-3">
-			Sign up for free
-			</button> -->
 		</div>
 		</div>
 		<!-- Collapsible wrapper -->
@@ -85,52 +83,12 @@
 
 <!-- End Navigation bar-->
 
+<iframe src="homepage.php" frameborder="0" width="100%" height="100%"  id="frame">
+	<!--Main Layout-->
+	
+	<!--Main Layout-->
+</iframe>
 
-<!--Main Layout-->
-  <main class="top_mp">
-
-    <div class="container">
-
-      <!--Section: Team v.1-->
-      <section class="text-center team-section">
-
-        <!--Grid row-->
-        <div class="row text-center">
-
-          <!--Grid column-->
-          <div class="col-md-12 mb-4" style="margin-top: -100px;">
-
-            <div class="avatar mx-auto">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="img-fluid rounded-circle z-depth-1" alt="First sample avatar image">
-            </div>
-            <h3 class="my-3 font-weight-bold">
-              <strong>User NAme</strong>
-            </h3>
-            <h6 class="font-weight-bold teal-text mb-4">Position</h6>
-
-            <!--Facebook-->
-            <a class="p-2 m-2 fa-lg fb-ic">
-              <i class="fab fa-facebook-f grey-text"> </i>
-            </a>
-            <!--Twitter-->
-            <a class="p-2 m-2 fa-lg tw-ic">
-              <i class="fab fa-twitter grey-text"> </i>
-            </a>
-            <!--Instagram-->
-            <a class="p-2 m-2 fa-lg ins-ic">
-              <i class="fab fa-instagram grey-text"> </i>
-            </a>
-
-            <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-
-          </div>
-        </div>
-    </div>
-  </main>
-<!--Main Layout-->
 
 
 
@@ -212,9 +170,9 @@
 	            <li>
 	              <a href="application.php" class="text-white">Apply</a>
 	            </li>
-	            <li>
+	            <!-- <li>
 	              <a href="logout.php" class="text-white">Log out</a>
-	            </li>
+	            </li> -->
 	          </ul>
 	        </div>
 	        <!--Grid column-->
@@ -262,4 +220,19 @@
 <script>
   AOS.init();
 </script>
+
+<script>
+	function LoginBtn_Clicked(){
+		document.getElementById("frame").src = "Login.php";
+	}
+
+	function DashboardBtn_Clicked(){
+		document.getElementById("frame").src = "homepage.php";
+	}
+
+	function AboutBtn_Clicked(){
+		document.getElementById("frame").src = "About.php";
+	}
+</script>
+
 </html>
