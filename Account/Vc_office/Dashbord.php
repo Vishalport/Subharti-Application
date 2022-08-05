@@ -29,7 +29,7 @@
     <div class="card-body">
         <img src="https://www.lisaadelhi.com/wp-content/uploads/2021/08/logo.jpg" alt="avatar"
         class="rounded-circle img-fluid" style="width: 300px;">
-		<h1>CEO</h1>
+		<h1>VC Office</h1>
     </div>
   </div>
 </main>
