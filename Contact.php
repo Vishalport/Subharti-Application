@@ -122,12 +122,12 @@
                       <ul class="contact-icons text-center list-unstyled">
                         <li>
                           <i class="fas fa-map-marker fa-2x orange-text"></i>
-                          <p>San Francisco, CA 94126, USA</p>
+                          <p>Meerut, U.P-250005 India </p>
                         </li>
 
                         <li>
                           <i class="fas fa-phone fa-2x orange-text"></i>
-                          <p>+ 01 234 567 89</p>
+                          <p>+919142243783</p>
                         </li>
 
                         <li>
