@@ -43,10 +43,10 @@
           ><span>History</span></a
           >
         <a
-           href="Password.php"
+           href="Add_Student.php"
            class="list-group-item list-group-item-action py-2 ripple"
            >
-          <i class="fas fa-key fa-fw me-3"></i><span>Password</span>
+          <i class="fas fa-user-plus fa-fw me-3"></i><span>Add Student</span>
         </a>
 		    <a
         href="http://192.168.60.4:90/"

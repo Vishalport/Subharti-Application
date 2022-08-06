@@ -44,4 +44,10 @@ body {
 #nav_mp_side {
   padding-top: 20px;
 }
+.djsd {
+  background-color: rgb(46, 162, 208);
+  height: 50px;
+  width: auto;
+  text-align: center;
+}
 

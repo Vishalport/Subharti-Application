@@ -165,9 +165,6 @@ html,body,header,
   }
 }
 
-.intro-2 {
-background: url("https://www.subharti.org/images/bank/banking%20Header.jpg")no-repeat center center;    background-size: cover;
-}
 .top-nav-collapse {
     background-color: #3f51b5 !important;
 }
@@ -372,4 +369,12 @@ p{
 #nav_icon a {
   background-color: #0C2F48;
 
+}
+
+
+.login_mp {
+  padding-bottom: 25px;
+  border-radius: 10px;
+  border: black solid;
+  font-weight: 30px;
 }

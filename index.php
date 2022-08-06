@@ -24,7 +24,11 @@
 <body>
 	
 <!-- 	Start Login From -->	
-    <section class="view intro-2">
+    <section class="view">
+	<video id="background-video" autoplay loop muted poster
+	style="height: 800px; width: auto;">
+	<source src="Background/Background.webm" type="video/mp4">
+	</video>
       <div class="mask rgba-stylish-strong h-100 d-flex justify-content-center align-items-center">
         <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
           <div class="row">
@@ -36,16 +40,15 @@
 
                   <!--Header-->
                   <div class="form-header purple-gradient">
-                    <h3><i class="fas fa-user mt-2 mb-2"></i> Sign In:</h3>
+                    <h3 class="text-center login_mp">Swami Vivekananda Subharti University, Meerut</h3>
                   </div>
 
                   <!--Body-->
 				  <form method="post">
 					<div class="md-form">
 						<i class="fas fa-user prefix white-text"></i>
-						<!-- <input type="text" id="orangeForm-name" class="form-control"> -->
 						<select name="user_type" id="user_type">
-							<option value="Select User">Select User</option>
+							<option value="Select User">---Select User---</option>
 							<option value="CEO">CEO</option>
 							<option value="VC">VC</option>
 							<option value="Registrar">Registrar</option>
