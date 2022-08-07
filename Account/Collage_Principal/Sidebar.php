@@ -53,6 +53,11 @@
         ><i class="fas fa-user-plus fa-fw me-3"></i><span>Add Teacher</span></a
         >
         <a
+        href="Add_Teacher.php"
+        class="list-group-item list-group-item-action py-2 ripple"
+        ><i class="fas fa-user-plus fa-fw me-3"></i><span>Add HOD</span></a
+        >
+        <a
         href="About.php"
         class="list-group-item list-group-item-action py-2 ripple"
         ><i class="fas fa-search fa-fw me-3"></i><span>About</span></a

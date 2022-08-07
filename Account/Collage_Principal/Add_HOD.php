@@ -20,17 +20,17 @@
 	<!-- MDB -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
 	
-	<title>Add Teacher</title>
+	<title>Add HOD</title>
 </head>
 <body>
 <main style="margin-top: 58px">
     <div class="container pt-4">
-        <div class="row d-flex justify-content-center align-items-center" id="nav_mp_side" data-aos="zoom-in-down"data-aos-duration="2000"> 
+        <div class="row d-flex justify-content-center align-items-center" id="nav_mp_side" data-aos="zoom-in-down" data-aos-duration="2000"> 
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
             <div class="card shadow-2-strong" style="border-radius: 1rem;">
             <div class="card-body p-5 text-center">
 
-                <h3 class="mb-5">Add Teacher</h3>
+                <h3 class="mb-5">Add HOD</h3>
 
                 <div class="form-outline mb-4">
                 <input type="text" class="form-control form-control-lg" />

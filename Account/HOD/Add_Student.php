@@ -25,8 +25,7 @@
 <body>
 <main style="margin-top: 58px">
     <div class="container pt-4">
-        <div class="row d-flex justify-content-center align-items-center" id="nav_mp_side" data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom" data-aos-duration="2000"> 
+        <div class="row d-flex justify-content-center align-items-center" id="nav_mp_side" data-aos="zoom-in-down"data-aos-duration="2000"> 
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
             <div class="card shadow-2-strong" style="border-radius: 1rem;">
             <div class="card-body p-5 text-center">
@@ -35,7 +34,15 @@
 
                 <div class="form-outline mb-4">
                 <input type="text" class="form-control form-control-lg" />
+                <label class="form-label">User Name</label>
+                </div>
+                <div class="form-outline mb-4">
+                <input type="text" class="form-control form-control-lg" />
                 <label class="form-label">User Id</label>
+                </div>
+                <div class="form-outline mb-4">
+                <input type="text" class="form-control form-control-lg" />
+                <label class="form-label">Email</label>
                 </div>
                 <div class="form-outline mb-4">
                 <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
