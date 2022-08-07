@@ -14,8 +14,7 @@
 	  <!-- Copyright -->
     <br>
 	  <div class="text-center p-3" style="background-color:black;">
-	    © 2022 Copyright:E-avedan, Devloped by: Praduman || Amzad || Vishal 
-	    <a class="text-white" href="https://mdbootstrap.com/">at https://Subharti.org/</a>
+	    <a class="text-white" href="https://mdbootstrap.com/">© 2022 Copyright:E-avedan, Devloped by: Praduman || Amzad || Vishal at https://Subharti.org/</a>
 	  </div>
 	  <!-- Copyright -->
 	</footer>
