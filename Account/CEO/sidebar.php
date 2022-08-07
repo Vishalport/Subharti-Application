@@ -1,3 +1,5 @@
+
+
 <link rel="stylesheet" type="text/css" href="style.css">
 <script
   	type="text/javascript"
@@ -48,9 +50,9 @@
         ><i class="fas fa-search fa-fw me-3"></i><span>Subharti ERP</span></a
         >
         <a
-        href="About.php"
+        href="../../About.php" target="_blank"
         class="list-group-item list-group-item-action py-2 ripple"
-        ><i class="fas fa-search fa-fw me-3"></i><span>About</span></a
+        ><i class="fas fa-braille fa-fw me-3"></i><span>About</span></a
         >
         <a
            href="Logout.php"

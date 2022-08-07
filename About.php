@@ -1,7 +1,3 @@
-<?php
-    include "Navbar.php";
-    include "Sidebar.php";
-?>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,26 +57,26 @@
                 <section class="webapp">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="col-12 col-sm-12 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
                                 <h5>Login as the CEO</h5>
                                 <p>Login as the CEO is the Service that we are providing to the University. In that user interface SEO will see the page regarding the applicatrion, thay can access all the information and application forwaed by the Registar office. and the ragistar office will resive all the information and applicatin form the VS Office. 
                                 CEO will accsept the application and reject the applicaion as for the time need that have hight ability to take an action on the application.
                                 the Account Should be uniq for the CEO it has only one account.</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400" />
+                            <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="Resource/image/CEO.jpg" alt="" width="250" height="250" />
                             </div>
                         </div>
                     </div>
                 </section> 
 
-                    <section class="webapp">
+                <section class="webapp">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400" />
+                            <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="Resource/image/Registrar.jpg" alt="" width="250" height="250" />
                             </div>
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="col-12 col-sm-12 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
                                 <h5>Log In as the Ragistar </h5>
                                 <p>Login as the CEO is the Service that we are providing to the University. In that user interface SEO will see the page regarding the applicatrion, thay can access all the information and application forwaed by the Registar office. and the ragistar office will resive all the information and applicatin form the VS Office. 
                                 CEO will accsept the application and reject the applicaion as for the time need that have hight ability to take an action on the application.
@@ -92,15 +88,15 @@
 
                 <section class="webapp">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="row" id="about_mp">
+                            <div class="col-12 col-sm-12 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
                                 <h5>Log In as the Voice Chancler </h5>
                                 <p>Login as the CEO is the Service that we are providing to the University. In that user interface SEO will see the page regarding the applicatrion, thay can access all the information and application forwaed by the Registar office. and the ragistar office will resive all the information and applicatin form the VS Office. 
                                 CEO will accsept the application and reject the applicaion as for the time need that have hight ability to take an action on the application.
                                 the Account Should be uniq for the CEO it has only one account.</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400" />
+                            <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="Resource/image/VC.png" alt="" width="250" height="250" />
                             </div>
                         </div>
                     </div>
@@ -109,10 +105,10 @@
                 <section class="webapp">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400" />
+                            <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="Resource/image/Principle.jpg" alt="" width="250" height="250" />
                             </div>
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="col-12 col-sm-12 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
                                 <h5>Log In as the Pricipal Office </h5>
                                 <p>Login as the CEO is the Service that we are providing to the University. In that user interface SEO will see the page regarding the applicatrion, thay can access all the information and application forwaed by the Registar office. and the ragistar office will resive all the information and applicatin form the VS Office. 
                                 CEO will accsept the application and reject the applicaion as for the time need that have hight ability to take an action on the application.
@@ -126,14 +122,14 @@
                 <section class="webapp">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="col-12 col-sm-12 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
                                 <h5>Login as the Co-ordinator office</h5>
                                 <p>Login as the CEO is the Service that we are providing to the University. In that user interface SEO will see the page regarding the applicatrion, thay can access all the information and application forwaed by the Registar office. and the ragistar office will resive all the information and applicatin form the VS Office. 
                                 CEO will accsept the application and reject the applicaion as for the time need that have hight ability to take an action on the application.
                                 the Account Should be uniq for the CEO it has only one account.</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400" />
+                            <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="Resource/image/Coordinater.jpg" alt="" width="250" height="250" />
                             </div>
                         </div>
                     </div>
@@ -143,10 +139,10 @@
                 <section class="webapp">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400" />
+                            <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="Resource/image/Hostel.jpg" alt="" width="250" height="250" />
                             </div>
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="col-12 col-sm-12 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
                                 <h5>Log In as the Hostel Warden</h5>
                                 <p>Login as the CEO is the Service that we are providing to the University. In that user interface SEO will see the page regarding the applicatrion, thay can access all the information and application forwaed by the Registar office. and the ragistar office will resive all the information and applicatin form the VS Office. 
                                 CEO will accsept the application and reject the applicaion as for the time need that have hight ability to take an action on the application.
@@ -156,18 +152,17 @@
                     </div>
                 </section>
 
-
                 <section class="webapp">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="col-12 col-sm-12 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
                                 <h5>Login as the Class Teacher</h5>
                                 <p>Login as the CEO is the Service that we are providing to the University. In that user interface SEO will see the page regarding the applicatrion, thay can access all the information and application forwaed by the Registar office. and the ragistar office will resive all the information and applicatin form the VS Office. 
                                 CEO will accsept the application and reject the applicaion as for the time need that have hight ability to take an action on the application.
                                 the Account Should be uniq for the CEO it has only one account.</p>
                             </div>
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400" />
+                            <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="Resource/image/Teacher.jpg" alt="" width="250" height="250" />
                             </div>
                         </div>
                     </div>
@@ -176,10 +171,10 @@
                 <section class="webapp">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="3000">
-                                <img src="https://terranovasecurity.com/wp-content/uploads/2020/09/Cyber-Security-Awareness-Hub-icon.png" alt="" width="400" height="400" />
+                            <div class="col-12 col-sm-12 col-lg-4" data-aos="fade-left" data-aos-duration="3000">
+                                <img src="Resource/image/Student.jpg" alt="" width="250" height="250" />
                             </div>
-                            <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="col-12 col-sm-12 col-lg-8" data-aos="fade-right" data-aos-duration="2000">
                                 <h5>Log In as the Student</h5>
                                 <p>Login as the CEO is the Service that we are providing to the University. In that user interface SEO will see the page regarding the applicatrion, thay can access all the information and application forwaed by the Registar office. and the ragistar office will resive all the information and applicatin form the VS Office. 
                                 CEO will accsept the application and reject the applicaion as for the time need that have hight ability to take an action on the application.
@@ -195,7 +190,6 @@
 </main>
 
 <!-- End Start About section -->
-<?php include "footer.php"; ?>
 </body>
 <script type="js/about.js"></script>
 <script

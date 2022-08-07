@@ -382,3 +382,7 @@ p{
 .login_page{
   overflow: hidden;
 }
+
+#about_mp {
+  padding-top: 20px;
+}
