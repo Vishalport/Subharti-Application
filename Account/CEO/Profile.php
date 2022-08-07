@@ -124,6 +124,7 @@
 
         $query = "update users set name='$name', email='$email', mobile='$mobile', designation='$designation', username='$newusername' where username = '$username'";
         $connect->query($query);
+        $_SESSION['username'] = $newusername;
 
         ?>
             <script>
