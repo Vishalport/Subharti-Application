@@ -1,4 +1,7 @@
 <?php
+	session_start();
+	if(!$_SESSION['CeoLogin'])
+		header('Location: ../../index.php');
     include "Navbar.php";
     include "Sidebar.php";
 ?>

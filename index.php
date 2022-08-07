@@ -147,7 +147,7 @@
 
 		}
 		elseif($user_type == "VC"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from vcaccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
