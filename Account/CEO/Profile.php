@@ -79,7 +79,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-9">
-                                <button class="text-muted mb-0" name="submit">Save</button>
+                                <button class="text-muted mb-0" name="submit">Make Changes</button>
                             </div>
                         </div>
                     </form>
