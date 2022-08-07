@@ -152,7 +152,7 @@
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['VcLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -175,12 +175,12 @@
 
 		}
 		elseif($user_type == "Registrar"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from registraraccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['ResistrarLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -202,12 +202,12 @@
 			}
 		}
 		elseif($user_type == "Principle"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from principleaccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['PrincipleLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -229,12 +229,12 @@
 			}
 		}
 		elseif($user_type == "HOD"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from hodaccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['HodLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -257,12 +257,12 @@
 			
 		}
 		elseif($user_type == "Coordinator"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from coordinatoraccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['CoordinatorLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -285,12 +285,12 @@
 			
 		}
 		elseif($user_type == "Faculty"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from facultyaccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['FacultyLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -312,12 +312,12 @@
 			}
 		}
 		elseif($user_type == "Student"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from studentaccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['StudentLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -339,12 +339,12 @@
 			}
 		}
 		elseif($user_type == "Staff"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from staffaccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['StaffLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -366,12 +366,12 @@
 			}
 		}
 		elseif($user_type == "Hostel Warden"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select * from wardenaccess where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
-                $_SESSION['CeoLogin'] = true;
+                $_SESSION['WardenLogin'] = true;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
