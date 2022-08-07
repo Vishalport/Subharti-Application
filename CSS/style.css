@@ -378,3 +378,7 @@ p{
   border: black solid;
   font-weight: 30px;
 }
+
+.login_page{
+  overflow: hidden;
+}
