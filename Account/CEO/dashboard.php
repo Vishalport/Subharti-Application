@@ -2,6 +2,7 @@
 	session_start();
 	if(!$_SESSION['CeoLogin'])
 		header('Location: ../../index.php');
+	$_SESSION['username'] = $_SESSION['username'];
     include "Navbar.php";
     include "Sidebar.php";
 ?>

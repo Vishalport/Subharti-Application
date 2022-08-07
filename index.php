@@ -118,12 +118,13 @@
 		$connect->select_db("svsuapp");
 
 		if($user_type == "CEO"){
-			$query = "select * from ceoaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select username, password from users where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
 				session_start();
                 $_SESSION['CeoLogin'] = true;
+				$_SESSION['username'] = $username;
 			?>
 				<script>
 					swal("Login Successfull!", "", "success")
@@ -146,7 +147,7 @@
 
 		}
 		elseif($user_type == "VC"){
-			$query = "select * from vcaccess where username = '".$username."' and password = '".$password."'";
+			$query = "select username, password from users where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){
@@ -174,7 +175,7 @@
 
 		}
 		elseif($user_type == "Registrar"){
-			$query = "select * from registraraccess where username = '".$username."' and password = '".$password."'";
+			$query = "select username, password from users where username = '".$username."' and password = '".$password."'";
 			$result = $connect->query($query);
 
 			if($result->num_rows == 1){

@@ -10,55 +10,28 @@
         $connect->select_db("svsuapp");
     }
 
-    $query = "create table if not exists ceoaccess (
-        username varchar(20),
-        password varchar(20)
-    )";
-    $connect->query($query);
-    $query = "select username, password from ceoaccess";
-    $result = $connect->query($query);
-    if($result->num_rows == 0)
-    {
-        $query = "insert into ceoaccess (username, password) values('ceo@subharti', 'ceo@123')";
-        $connect->query($query);
-    }
-
-
-    $query = "create table if not exists vcaccess (
-        username varchar(20),
-        password varchar(20)
-    )";
-    $connect->query($query);
-    $query = "select username, password from vcaccess";
-    $result = $connect->query($query);
-    if($result->num_rows == 0)
-    {
-        $query = "insert into vcaccess (username, password) values('vc@subharti', 'vc@123')";
-        $connect->query($query);
-    }
-
-    $query = "create table if not exists registraraccess (
-        username varchar(20),
-        password varchar(20)
-    )";
-    $connect->query($query);
-    $query = "select username, password from registraraccess";
-    $result = $connect->query($query);
-    if($result->num_rows == 0)
-    {
-        $query = "insert into registraraccess (username, password) values('registrar@subharti', 'registrar@123')";
-        $connect->query($query);
-    }
-    
     $query = "create table if not exists users(
         name varchar(50),
         email varchar(50),
         mobile varchar(10),
         position varchar(30),
         designation varchar(100),
-        image varchar(100)
+        image varchar(100),
+        username varchar(20),
+        password varchar(30)
     )";
     $connect->query($query);
+    $query = "select username, password from users";
+    $result = $connect->query($query);
+    if($result->num_rows == 0)
+    {
+        $query = "insert into users (position, username, password) values('CEO', 'ceo@subharti', 'ceo@123')";
+        $connect->query($query);
+        $query = "insert into users (position, username, password) values('Vice-Chancellor', 'vc@subharti', 'vc@123')";
+        $connect->query($query);
+        $query = "insert into users (position, username, password) values('Registrar', 'registrar@subharti', 'registrar@123')";
+        $connect->query($query);
+    }
 
     $query = "create table if not exists letter(
         ref varchar(20) not null primary key,

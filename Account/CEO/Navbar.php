@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION['username'] = $_SESSION['username'];
+?>
+
 <!--Main Navigation-->
 <header>
 
