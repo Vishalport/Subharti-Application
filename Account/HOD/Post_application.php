@@ -19,29 +19,21 @@
 	<!-- MDB -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
 	
-	<title>Subharti Application</title>
+	<title>Post Application</title>
 </head>
 <body>
 <main style="margin-top: 58px" id="nav_mp">
   <div class="container pt-4">
-  <select name="user_type" id="user_type">
+  <select name="user_type" id="user_type" style="text-align: center">
         <option value="Select User">Post To </option>
-        <option value="CEO">CEO</option>
-        <option value="VC">VC</option>
-        <option value="Registrar">Registrar</option>
-        <option value="Principle">Principle</option>
-        <option value="HOD">HOD</option>
-        <option value="Coordinator">Coordinator</option>
+         <option value="Principle">Principle</option>
+         <option value="Coordinator">Coordinator</option>
         <option value="Faculty">Faculty</option>
-        <option value="Student">Student</option>
-        <option value="Staff">Staff</option>
-        <option value="Staff">Hostel Warden</option>
-    </select>
+     </select>
     <div class="md-form mb-4 pink-textarea active-pink-textarea">
         <i class="fas fa-angle-double-right prefix"></i>
-        <textarea id="form21" class="md-textarea form-control" rows="18"></textarea>
-        <label for="form21">Write your Application Here</label>
-    </div>
+        <textarea id="form21" class="md-textarea form-control" rows="18" placeholder="Write your application here..."></textarea>
+     </div>
 <button class="btn purple-gradient btn-lg" id="New_Registration" name="submit">POST APPLICATION</button>
   </div>
 </main>

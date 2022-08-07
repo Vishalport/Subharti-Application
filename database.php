@@ -50,4 +50,28 @@
         $connect->query($query);
     }
     
+    $query = "create table if not exists users(
+        name varchar(50),
+        email varchar(50),
+        mobile varchar(10),
+        position varchar(30),
+        designation varchar(100),
+        image varchar(100)
+    )";
+    $connect->query($query);
+
+    $query = "create table if not exists letter(
+        ref varchar(20) not null primary key,
+        appdate varchar(10),
+        description varchar(500),
+        remark varchar(100),
+        remarkdate varchar(10),
+        status varchar(10),
+        position varchar(30),
+        source varchar(50),
+        name varchar(50),
+        sourcedetail varchar(100),
+        dest varchar(50)
+    )";
+    $connect->query($query);
 ?>
