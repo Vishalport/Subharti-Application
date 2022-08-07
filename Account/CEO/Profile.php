@@ -62,47 +62,49 @@
             <div class="col-lg-8">
                 <div class="card mb-4">
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Name</p>
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="text-muted mb-0" placeholder="ABCD Kuamr" style="border:none;" name="name">
+                            </div>
                         </div>
-                        <div class="col-sm-9">
-                            <input type="text" class="text-muted mb-0" placeholder="ABCD Kuamr" style="border:none;">
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                            </div>
+                            <div class="col-sm-9">
+                            <input type="text" class="text-muted mb-0" placeholder="Email" style="border:none;" name="email">
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Email</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Mobile</p>
+                            </div>
+                            <div class="col-sm-9">
+                            <input type="text" class="text-muted mb-0" placeholder="Mobile" style="border:none;" name="mobile">
+                            </div>
                         </div>
-                        <div class="col-sm-9">
-                        <input type="text" class="text-muted mb-0" placeholder="Email" style="border:none;">
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Designation</p>
+                            </div>
+                            <div class="col-sm-9">
+                            <input type="text" class="text-muted mb-0" placeholder="Designation" style="border:none;" name="designation">
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Mobile</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <button class="text-muted mb-0" name="submit">Save</button>
+                            </div>
                         </div>
-                        <div class="col-sm-9">
-                        <input type="text" class="text-muted mb-0" placeholder="Mobile" style="border:none;">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Designation</p>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="text" class="text-muted mb-0" placeholder="Designation" style="border:none;">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <button class="text-muted mb-0">Save</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 </div>
             </div>
@@ -113,3 +115,13 @@
 </main>
 <?php include "footer.php"; ?>
 </body>
+
+<?php
+    if(isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $email=$_POST['email'];
+        $mobile = $_POST['mobile'];
+        $designation = $_POST['designation'];
+        
+    }
+?>
