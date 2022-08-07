@@ -14,7 +14,7 @@
 	  <!-- Copyright -->
     <br>
 	  <div class="text-center p-3" style="background-color:black;">
-	    © 2022 Copyright: developer:-Vishal, Amzad
+	    © 2022 Copyright:E-avedan, Devloped by: Praduman || Amzad || Vishal 
 	    <a class="text-white" href="https://mdbootstrap.com/">at https://Subharti.org/</a>
 	  </div>
 	  <!-- Copyright -->
