@@ -3,6 +3,12 @@
 	if(!$_SESSION['CeoLogin'])
 		header('Location: ../../index.php');
 	$_SESSION['username'] = $_SESSION['username'];
+
+	$connect = mysqli_connect("localhost", "root", "");
+    $connect->select_db("svsuapp");
+    $query = "select * from users where username = '".$_SESSION['username']."'";
+    $result = $connect->query($query);
+    $data = $result->fetch_assoc();
     include "Navbar.php";
     include "Sidebar.php";
 ?>
@@ -40,10 +46,9 @@
 		<div class="card-body text-center">
 			<img src="https://www.subharti.org/images/website%20images%20500x500.png" alt="avatar"
 			class="rounded-circle img-fluid" style="width: 150px;">
-			<h5 class="my-3">User Name</h5>
-			<p class="text-muted mb-1">User name</p>
-			<p class="text-muted mb-1">Position</p>
-			<p class="text-muted mb-1">Office</p>
+			<h5 class="my-3"><?php  echo $data["name"]; ?></h5>
+			<p class="text-muted mb-1"><?php  echo $data["position"]; ?></p>
+			<p class="text-muted mb-1"><?php  echo $data["designation"]; ?></p>
 		</div>
 	</div>
   </div>

@@ -117,11 +117,12 @@
         $mobile = $_POST['mobile'];
         $designation = $_POST['designation'];
         $username = $_SESSION['username'];
+        $newusername = $_POST['username'];
 
         $connect = mysqli_connect("localhost", "root", "");
         $connect->select_db("svsuapp");
 
-        $query = "update users set name='$name', email='$email', mobile='$mobile', designation='$designation' where username = '$username'";
+        $query = "update users set name='$name', email='$email', mobile='$mobile', designation='$designation', username='$newusername' where username = '$username'";
         $connect->query($query);
 
         ?>
