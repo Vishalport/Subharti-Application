@@ -21,8 +21,7 @@
 	
 	<title>Login</title>
 </head>
-<body>
-	
+<body>	
 <!-- 	Start Login From -->	
     <section class="view login_page">
 	<video id="background-video" autoplay loop muted poster
