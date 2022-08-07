@@ -43,28 +43,6 @@
                     <p class="text-muted mb-1"><?php  echo $data["position"]; ?></p>
                 </div>
                 </div>
-                <div class="card mb-4 mb-lg-0">
-                <div class="card-body p-0">
-                    <ul class="list-group list-group-flush rounded-3">
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <i class="fas fa-globe fa-lg text-warning"></i>
-                        <p class="mb-0">Own Website</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
-                        <p class="mb-0">Own twitter</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
-                        <p class="mb-0">Own instagram</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
-                        <p class="mb-0">Own facebook</p>
-                    </li>
-                    </ul>
-                </div>
-                </div>
             </div>
             <div class="col-lg-8">
                 <div class="card mb-4">
@@ -117,7 +95,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-9">
-                                <button class="text-muted mb-0" name="submit">Save</button>
+                                <button class="text-muted mb-0" name="submit">Make Changes</button>
                             </div>
                         </div>
                     </form>

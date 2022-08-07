@@ -36,76 +36,53 @@
                     <p class="text-muted mb-1">Position</p>
                 </div>
                 </div>
-                <div class="card mb-4 mb-lg-0">
-                <div class="card-body p-0">
-                    <ul class="list-group list-group-flush rounded-3">
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <i class="fas fa-globe fa-lg text-warning"></i>
-                        <p class="mb-0">Own Website</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
-                        <p class="mb-0">Own twitter</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
-                        <p class="mb-0">Own instagram</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
-                        <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
-                        <p class="mb-0">Own facebook</p>
-                    </li>
-                    </ul>
-                </div>
-                </div>
             </div>
             <div class="col-lg-8">
                 <div class="card mb-4">
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Name</p>
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="text-muted mb-0" placeholder="ABCD Kuamr" style="border:none;" name="name">
+                            </div>
                         </div>
-                        <div class="col-sm-9">
-                            <p class="text-muted mb-0">ABCD Kuamr</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                            </div>
+                            <div class="col-sm-9">
+                            <input type="text" class="text-muted mb-0" placeholder="Email" style="border:none;" name="email">
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Email</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Mobile</p>
+                            </div>
+                            <div class="col-sm-9">
+                            <input type="text" class="text-muted mb-0" placeholder="Mobile" style="border:none;" name="mobile">
+                            </div>
                         </div>
-                        <div class="col-sm-9">
-                            <p class="text-muted mb-0">vs@Subharti.org</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Designation</p>
+                            </div>
+                            <div class="col-sm-9">
+                            <input type="text" class="text-muted mb-0" placeholder="Designation" style="border:none;" name="designation">
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Phone</p>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <button class="text-muted mb-0" name="submit">Save</button>
+                            </div>
                         </div>
-                        <div class="col-sm-9">
-                            <p class="text-muted mb-0">(+91) 000 00 000</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Mobile</p>
-                        </div>
-                        <div class="col-sm-9">
-                            <p class="text-muted mb-0">(9165) 733-43211</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <p class="mb-0">Address</p>
-                        </div>
-                        <div class="col-sm-9">
-                            <p class="text-muted mb-0">Meerut, NH-58</p>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 </div>
             </div>
@@ -116,3 +93,13 @@
 </main>
 <?php include "footer.php"; ?>
 </body>
+
+<?php
+    if(isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $email=$_POST['email'];
+        $mobile = $_POST['mobile'];
+        $designation = $_POST['designation'];
+        
+    }
+?>
