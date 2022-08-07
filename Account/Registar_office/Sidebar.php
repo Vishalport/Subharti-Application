@@ -42,6 +42,12 @@
            ><i class="fas fa-newspaper fa-fw me-3"></i
           ><span>History</span></a
           >
+          <a
+           href="Add_Principl.php"
+           class="list-group-item list-group-item-action py-2 ripple"
+           >
+          <i class="fas fa-user-plus fa-fw me-3"></i><span>Add Principl</span>
+        </a>
 		    <a
         href="http://192.168.60.4:90/"
         class="list-group-item list-group-item-action py-2 ripple"

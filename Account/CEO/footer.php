@@ -22,28 +22,23 @@
 	    <!-- Section: Social media -->
 	    <section class="mb-4">
 	      <!-- Facebook -->
-	      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+	      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/subhartiuni/" role="button"
 	        ><i class="fab fa-facebook-f"></i
 	      ></a>
 
 	      <!-- Twitter -->
-	      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+	      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/subhartiofficia?lang=en" role="button"
 	        ><i class="fab fa-twitter"></i
 	      ></a>
 
 	      <!-- Google -->
-	      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+	      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/maps/@30.3436616,77.9657985,17z" role="button"
 	        ><i class="fab fa-google"></i
 	      ></a>
 
 	      <!-- Instagram -->
-	      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+	      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/subhartiuni.official/" role="button"
 	        ><i class="fab fa-instagram"></i
-	      ></a>
-
-	      <!-- Linkedin -->
-	      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-	        ><i class="fab fa-linkedin-in"></i
 	      ></a>
 	    </section>
 	    <!-- Section: End Social media -->
@@ -67,34 +62,13 @@
 
 	          <ul class="list-unstyled mb-0">
 	            <li>
-	              <a href="#!" class="text-white">Vishal for Frontend</a>
+	              <a href="#!" class="text-white">Vishal: Frontend</a>
 	            </li>
 	            <li>
-	              <a href="#!" class="text-white">Amzad for backend</a>
+	              <a href="#!" class="text-white">Amzad : backend</a>
 	            </li>
 	           	<li>
-	              <a href="#!" class="text-white">Parduman for Idea</a>
-	            </li>
-	          </ul>
-	        </div>
-	        <!--Grid column-->
-
-	        <!--Grid column-->
-	        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-	          <h5 class="text-uppercase">Page's</h5>
-
-	          <ul class="list-unstyled mb-0">
-	            <li>
-	              <a href="about.php" class="text-white">Application</a>
-	            </li>
-	            <li>
-	              <a href="news.php" class="text-white">News</a>
-	            </li>
-	            <li>
-	              <a href="application.php" class="text-white">Apply</a>
-	            </li>
-	            <li>
-	              <a href="logout.php" class="text-white">Log out</a>
+	              <a href="#!" class="text-white">Parduman : Idea</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -106,7 +80,7 @@
 
 	          <ul class="list-unstyled mb-0">
 	            <li>
-	              <a href="#!" class="text-white">Instagram</a>
+	              <a href="" class="text-white">Faculty of Medicine / Faculty of Dental Sciences</a>
 	            </li>
 	            <li>
 	              <p>Instagram</p>
