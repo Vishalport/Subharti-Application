@@ -116,7 +116,7 @@
         $email=$_POST['email'];
         $mobile = $_POST['mobile'];
         $designation = $_POST['designation'];
-        $username = $_POST['username'];
+        $username = $_SESSION['username'];
 
         $connect = mysqli_connect("localhost", "root", "");
         $connect->select_db("svsuapp");
