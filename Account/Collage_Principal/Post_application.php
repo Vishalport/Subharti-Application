@@ -24,14 +24,33 @@
 <body>
 <main style="margin-top: 58px" id="nav_mp">
   <div class="container pt-4">
-  <select name="user_type" id="user_type" style="text-align: center">
+    <select name="user_type" id="user_type" style="text-align: center">
         <option value="Select User">Post To </option>
         <option value="CEO">CEO</option>
         <option value="VC">VC</option>
         <option value="Registrar">Registrar</option>
          <option value="HOD">HOD</option>
          <option value="Faculty">Faculty</option>
+         <option value="Faculty">Principle</option>
      </select>
+    <select name="user_type" id="user_type">
+      <option value="Select User" style="text-align: center">Select Collage</option>
+      <option value="CEO">Faculty of Medicine </option>
+      <option value="VC"> Faculty of Dental Sciences</option>
+      <option value="Registrar"> Faculty of Nursing</option>
+      <option value="Principle">Faculty of Physiotherapy & Allied Sciences</option>
+      <option value="Principle"> Faculty of AYUSH</option>
+      <option value="Principle"> Faculty of Pharmacy</option>
+      <option value="Principle"> Faculty of Law</option>
+      <option value="Principle">Faculty of Engineering</option>
+      <option value="Principle"> Faculty of Science Faculty of Education</option>
+      <option value="Principle">Subharti College of Management & Commerce</option>
+      <option value="Principle"> Faculty of Fine Arts </option>
+      <option value="Principle"> Faculty of Arts & Social Science</option>
+      <option value="Principle">School of Buddhist Studies</option>
+      <option value="Principle"> Subharti College of Hotel Management</option>
+      <option value="Principle"> Subharti Polytechnic College</option>
+    </select>
     <div class="md-form mb-4 pink-textarea active-pink-textarea">
         <i class="fas fa-angle-double-right prefix"></i>
         <textarea id="form21" class="md-textarea form-control" rows="18"placeholder="Write your application here..."></textarea>
