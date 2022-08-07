@@ -53,7 +53,7 @@
                                 <p class="mb-0">Name</p>
                             </div>
                             <div class="col-sm-9">
-                                <input type="text" class="text-muted mb-0" placeholder="ABCD Kuamr" style="border:none;" name="name" value=<?php echo $data['name']; ?>>
+                                <input type="text" class="text-muted mb-0" placeholder="Your Name" style="border:none;" name="name" value=<?php echo $data['name']; ?>>
                             </div>
                         </div>
                         <hr>
@@ -89,7 +89,7 @@
                                 <p class="mb-0">Username</p>
                             </div>
                             <div class="col-sm-9">
-                            <input type="text" class="text-muted mb-0" placeholder="Username" style="border:none;" name="username" value=<?php  echo $data["username"]; ?> desabled>
+                            <input type="text" class="text-muted mb-0" placeholder="Username" style="border:none;" name="username" value=<?php  echo $data["username"]; ?>>
                             </div>
                         </div>
                         <hr>
