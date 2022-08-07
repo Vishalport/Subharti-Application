@@ -25,7 +25,7 @@
 <!-- 	Start Login From -->	
     <section class="view login_page">
 	<video id="background-video" autoplay loop muted poster
-	style="height: 800px; width: auto;">
+	style="height: 800px; width: auto; ">
 	<source src="Background/Background.webm" type="video/mp4">
 	</video>
       <div class="mask rgba-stylish-strong h-100 d-flex justify-content-center align-items-center">
