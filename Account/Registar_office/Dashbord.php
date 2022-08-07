@@ -1,4 +1,7 @@
 <?php
+	session_start();
+	if(!$_SESSION['CeoLogin'])
+		header('Location: ../../index.php');
     include "Navbar.php";
     include "Sidebar.php";
 ?>
@@ -27,15 +30,12 @@
   <div class="container pt-4">
 	<div class="card mb-4">
 		<div class="row" style="padding-top: 0; height: 200px; width: auto;">
-			<div class="col-12 col-sm-12 col-lg-6">
-			<img src="https://www.lisaadelhi.com/wp-content/uploads/2021/08/logo.jpg" alt="">
-			</div>
-			<div class="col-12 col-sm-12 col-lg-6" style="padding-top: 65px;">
-				<h5>Swami Vivekanada Subharti University</h5>
-				<h3>CEO Dashboard</h3>
+			<div style="padding-top: 65px; text-align:center;">
+				<h3>Swami Vivekanada Subharti University</h3>
+				<h5>CEO Dashboard</h5>
+				<hr>
 			</div>
 		</div>
-		<hr>
 		<div class="card-body text-center">
 			<img src="https://www.subharti.org/images/website%20images%20500x500.png" alt="avatar"
 			class="rounded-circle img-fluid" style="width: 150px;">
