@@ -16,6 +16,7 @@
         mobile varchar(10),
         position varchar(30),
         designation varchar(100),
+        department varchar(100),
         image varchar(100),
         username varchar(20),
         password varchar(30)
@@ -34,17 +35,17 @@
     }
 
     $query = "create table if not exists letter(
-        ref varchar(20) not null primary key,
+        id int not null primary key AUTO_INCREMENT,
+        ref varchar(20),
         appdate varchar(10),
-        description varchar(500),
         remark varchar(100),
         remarkdate varchar(10),
         status varchar(10),
         position varchar(30),
         source varchar(50),
         name varchar(50),
-        sourcedetail varchar(100),
-        dest varchar(50)
+        sourceuser varchar(20),
+        destuser varchar(20)
     )";
     $connect->query($query);
 ?>
