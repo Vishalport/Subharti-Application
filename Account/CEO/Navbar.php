@@ -79,6 +79,7 @@ $_SESSION['username'] = $_SESSION['username'];
               aria-labelledby="navbarDropdownMenuLink"
               >
             <li><a class="dropdown-item" href="Profile.php">My profile</a></li>
+            <li><a class="dropdown-item" href="Edit.php">Edit Profile</a></li>
             <li><a class="dropdown-item" href="Password.php">Password</a></li>
             <li><a class="dropdown-item" href="Logout.php">Logout</a></li>
           </ul>

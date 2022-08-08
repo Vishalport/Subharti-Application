@@ -31,10 +31,10 @@
 <body>
 <main style="margin-top: 58px">
     <div class="container pt-4">
-        <section>
-        <div class="container">
+        <section style="background-color: #eee;">
+        <div class="container py-5">
             <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-5">
                 <div class="card mb-4">
                 <div class="card-body text-center">
                     <img src="https://www.subharti.org/images/website%20images%20500x500.png" alt="avatar"
@@ -44,16 +44,16 @@
                 </div>
                 </div>
             </div>
-            <div class="col-lg-12">
+            <div class="col-lg-7">
                 <div class="card mb-4">
                 <div class="card-body">
                     <form method="post">
                         <div class="row">
                             <div class="col-sm-3">
-                                <p class="mb-0">Username</p>
+                                <p class="mb-0">Name</p>
                             </div>
                             <div class="col-sm-9">
-                            <p><?php  echo $data["username"]; ?></p>
+                                <input type="text" class="text-muted mb-0" placeholder="Your Name" style="border:Line;" name="name" value=<?php ?>>
                             </div>
                         </div>
                         <hr>
@@ -62,7 +62,7 @@
                                 <p class="mb-0">Email</p>
                             </div>
                             <div class="col-sm-9">
-                                <p><?php  echo $data["email"]; ?></p>
+                            <input type="text" class="text-muted mb-0" placeholder="Email" style="border:Line;" name="email" value=<?php ?>>
                             </div>
                         </div>
                         <hr>
@@ -71,7 +71,7 @@
                                 <p class="mb-0">Mobile</p>
                             </div>
                             <div class="col-sm-9">
-                                <p><?php  echo $data["mobile"]; ?></p>
+                            <input type="text" class="text-muted mb-0" placeholder="Mobile" style="border:Line;" name="mobile" value=<?php ?>>
                             </div>
                         </div>
                         <hr>
@@ -80,10 +80,24 @@
                                 <p class="mb-0">Designation</p>
                             </div>
                             <div class="col-sm-9">
-                            <p><?php  echo $data["designation"]; ?></p>
+                            <input type="text" class="text-muted mb-0" placeholder="Designation" style="border:Line;" name="designation" value=<?php ?>>
                             </div>
                         </div>
                         <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Username</p>
+                            </div>
+                            <div class="col-sm-9">
+                            <input type="text" class="text-muted mb-0" placeholder="Username" style="border:Line;" name="username" value=<?php ?>>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <button class="text-muted mb-0" name="submit">Make Changes</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 </div>
