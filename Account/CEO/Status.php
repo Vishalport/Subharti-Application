@@ -11,7 +11,7 @@
                 <ul class="list-group list-group-light">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center">
-                    <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
+                    <img src="https://www.subharti.org/images/website%20images%20500x500.png" alt="" style="width: 45px; height: 45px"
                         class="rounded-circle" />
                     <div class="ms-3">
                         <p class="fw-bold mb-1">Current Position Name</p>
@@ -22,7 +22,7 @@
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center">
-                    <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+                    <img src="https://www.subharti.org/images/website%20images%20500x500.png" class="rounded-circle" alt=""
                         style="width: 45px; height: 45px" />
                     <div class="ms-3">
                         <p class="fw-bold mb-1">Current Position Name</p>
@@ -33,7 +33,7 @@
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center">
-                    <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
+                    <img src="https://www.subharti.org/images/website%20images%20500x500.png" class="rounded-circle" alt=""
                         style="width: 45px; height: 45px" />
                     <div class="ms-3">
                         <p class="fw-bold mb-1">Current Position Name</p>
@@ -44,7 +44,7 @@
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center">
-                    <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
+                    <img src="https://www.subharti.org/images/website%20images%20500x500.png" class="rounded-circle" alt=""
                         style="width: 45px; height: 45px" />
                     <div class="ms-3">
                         <p class="fw-bold mb-1">Current Position Name</p>
