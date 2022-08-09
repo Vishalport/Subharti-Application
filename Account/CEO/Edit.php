@@ -6,6 +6,10 @@
     $query = "select * from users where username = '".$_SESSION['username']."'";
     $result = $connect->query($query);
     $data = $result->fetch_assoc();
+    if(empty($data['image']))
+        $image = "https://img.icons8.com/fluency/96/000000/user-male-circle.png";
+    else
+        $image = "../../Resource/users/".$data['image'];
 ?>
 <head>
 	<meta charset="utf-8">
@@ -37,7 +41,7 @@
             <div class="col-lg-5">
                 <div class="card mb-4">
                 <div class="card-body text-center">
-                    <img src="https://www.subharti.org/images/website%20images%20500x500.png" alt="avatar"
+                    <img src=<?php echo $image?> alt="avatar"
                     class="rounded-circle img-fluid" style="width: 150px;">
                     <h5 class="my-3"><?php  echo $data["name"]; ?></h5>
                     <p class="text-muted mb-1"><?php  echo $data["position"]; ?></p>
@@ -53,7 +57,7 @@
                                 <p class="mb-0">Name</p>
                             </div>
                             <div class="col-sm-9">
-                                <input type="text" class="text-muted mb-0" placeholder="Your Name" style="border:Line;" name="name" value=<?php ?>>
+                                <input type="text" class="text-muted mb-0" placeholder="Your Name" style="border:Line;" name="name" value=<?php echo $data['name']?>>
                             </div>
                         </div>
                         <hr>
@@ -62,7 +66,7 @@
                                 <p class="mb-0">Email</p>
                             </div>
                             <div class="col-sm-9">
-                            <input type="text" class="text-muted mb-0" placeholder="Email" style="border:Line;" name="email" value=<?php ?>>
+                            <input type="text" class="text-muted mb-0" placeholder="Email" style="border:Line;" name="email" value=<?php echo $data['email'] ?>>
                             </div>
                         </div>
                         <hr>
@@ -71,7 +75,7 @@
                                 <p class="mb-0">Mobile</p>
                             </div>
                             <div class="col-sm-9">
-                            <input type="text" class="text-muted mb-0" placeholder="Mobile" style="border:Line;" name="mobile" value=<?php ?>>
+                            <input type="text" class="text-muted mb-0" placeholder="Mobile" style="border:Line;" name="mobile" value=<?php echo $data['mobile'] ?>>
                             </div>
                         </div>
                         <hr>
@@ -80,16 +84,7 @@
                                 <p class="mb-0">Designation</p>
                             </div>
                             <div class="col-sm-9">
-                            <input type="text" class="text-muted mb-0" placeholder="Designation" style="border:Line;" name="designation" value=<?php ?>>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <p class="mb-0">Username</p>
-                            </div>
-                            <div class="col-sm-9">
-                            <input type="text" class="text-muted mb-0" placeholder="Username" style="border:Line;" name="username" value=<?php ?>>
+                            <input type="text" class="text-muted mb-0" placeholder="Designation" style="border:Line;" name="designation" value=<?php echo $data['designation']?>>
                             </div>
                         </div>
                         <hr>
@@ -116,16 +111,12 @@
         $email=$_POST['email'];
         $mobile = $_POST['mobile'];
         $designation = $_POST['designation'];
-        $username = $_SESSION['username'];
-        $newusername = $_POST['username'];
 
         $connect = mysqli_connect("localhost", "root", "");
         $connect->select_db("svsuapp");
 
-        $query = "update users set name='$name', email='$email', mobile='$mobile', designation='$designation', username='$newusername' where username = '$username'";
+        $query = "update users set name='$name', email='$email', mobile='$mobile', designation='$designation' where username = '".$_SESSION['username']."'";
         $connect->query($query);
-        $_SESSION['username'] = $newusername;
-
         ?>
             <script>
                 swal("Data Updated Successfully!", "", "success")

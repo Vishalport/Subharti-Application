@@ -1,4 +1,6 @@
 <?php
+	include "Navbar.php";
+    include "Sidebar.php";
 	session_start();
 	if(!$_SESSION['CeoLogin'])
 		header('Location: ../../index.php');
@@ -9,8 +11,10 @@
     $query = "select * from users where username = '".$_SESSION['username']."'";
     $result = $connect->query($query);
     $data = $result->fetch_assoc();
-    include "Navbar.php";
-    include "Sidebar.php";
+	if(empty($data['image']))
+        $image = "https://img.icons8.com/fluency/96/000000/user-male-circle.png";
+    else
+        $image = "../../Resource/users/".$data['image'];
 ?>
 <head>
 	<meta charset="utf-8">
@@ -44,7 +48,7 @@
 			</div>
 		</div>
 		<div class="card-body text-center">
-			<img src="https://www.subharti.org/images/website%20images%20500x500.png" alt="avatar"
+			<img src=<?php echo $image;?> alt="avatar"
 			class="rounded-circle img-fluid" style="width: 150px;">
 			<h5 class="my-3"><?php  echo $data["name"]; ?></h5>
 			<p class="text-muted mb-1"><?php  echo $data["position"]; ?></p>

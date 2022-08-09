@@ -1,6 +1,17 @@
 <?php
-session_start();
-$_SESSION['username'] = $_SESSION['username'];
+  session_start();
+  $_SESSION['username'] = $_SESSION['username'];
+
+  $connect = mysqli_connect("localhost", "root", "");
+    $connect->select_db("svsuapp");
+    $query = "select image from users where username = '".$_SESSION['username']."'";
+    $result = $connect->query($query);
+    $data = $result->fetch_assoc();
+
+    if(empty($data['image']))
+        $image = "https://img.icons8.com/fluency/96/000000/user-male-circle.png";
+    else
+        $image = "../../Resource/users/".$data['image'];
 ?>
 
 <!--Main Navigation-->
@@ -67,7 +78,7 @@ $_SESSION['username'] = $_SESSION['username'];
              aria-expanded="false"
              >
             <img
-                 src="https://www.subharti.org/images/website%20images%20500x500.png"
+                 src=<?php echo $image;?>
                  class="rounded-circle"
                  height="50"
                  alt=""

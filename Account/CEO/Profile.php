@@ -6,6 +6,11 @@
     $query = "select * from users where username = '".$_SESSION['username']."'";
     $result = $connect->query($query);
     $data = $result->fetch_assoc();
+
+    if(empty($data['image']))
+        $image = "https://img.icons8.com/fluency/96/000000/user-male-circle.png";
+    else
+        $image = "../../Resource/users/".$data['image'];
 ?>
 <head>
 	<meta charset="utf-8">
@@ -36,12 +41,18 @@
             <div class="row">
             <div class="col-lg-12">
                 <div class="card mb-4">
-                <div class="card-body text-center">
-                    <img src="https://www.subharti.org/images/website%20images%20500x500.png" alt="avatar"
-                    class="rounded-circle img-fluid" style="width: 150px;">
-                    <h5 class="my-3"><?php  echo $data["name"]; ?></h5>
-                    <p class="text-muted mb-1"><?php  echo $data["position"]; ?></p>
-                </div>
+                    <form method="post" class="form" id = "form" enctype="multipart/form-data">
+                        <div class="card-body text-center upload">
+                            <img src=<?php echo $image;?> alt="Avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                            <div class="round">
+                                <input type="file" name="image" id = "image" accept=".jpg, .jpeg, .png">
+                                <i class = "fa fa-camera" style = "color: #fff;"></i>
+                            </div>
+
+                            <h5 class="my-3"><?php  echo $data["name"]; ?></h5>
+                            <p class="text-muted mb-1"><?php  echo $data["position"]; ?></p>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="col-lg-12">
@@ -124,3 +135,45 @@
 ?>
 
 
+<script type="text/javascript">
+    document.getElementById("image").onchange = function(){
+        document.getElementById("form").submit();
+    };
+</script>
+<?php
+if(isset($_FILES["image"]["name"])){
+    
+    $imageName = $_FILES["image"]["name"];
+    $tmpName = $_FILES["image"]["tmp_name"];
+
+    // Image validation
+    $validImageExtension = ['jpg', 'jpeg', 'png'];
+    $imageExtension = explode('.', $imageName);
+    $imageExtension = strtolower(end($imageExtension));
+    if (!in_array($imageExtension, $validImageExtension)){
+        ?>
+            <script>
+                swal("Invalid Image Extension!", "", "warning")
+                .then((value) => {
+                    window.location.replace("Profile.php"); 
+                });
+            </script>
+		<?php
+    }
+    else{
+    $newImageName = $_SESSION["username"]; // Generate new image name
+    $newImageName .= '.' . $imageExtension;
+    $query = "UPDATE users SET image = '$newImageName' WHERE username = '".$_SESSION['username']."'";
+    $connect->query($query);
+    move_uploaded_file($tmpName, '../../Resource/users/' . $newImageName);
+    ?>
+        <script>
+            swal("Image Updated Successfully!", "", "success")
+            .then((value) => {
+                window.location.replace("Profile.php"); 
+            });
+        </script>
+	<?php
+    }
+}
+?>

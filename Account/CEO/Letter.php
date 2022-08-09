@@ -36,7 +36,17 @@ $college = $_POST['college'];
 $subject = $_POST['subject'];
 $msg = $_POST['msg'];
 $email = $data['email'];
-$destuser = "vc@subharti";
+$destuser;
+if($sendto == "VC")
+    $destuser = "vc@subharti";
+elseif($sendto == "Registrar")
+    $destuser = "registrar@subharti";
+else{
+    $query = "SELECT username FROM users WHERE designation = '$college'";
+    $result = $connect->query($query);
+    $row = $result->fetch_assoc();
+    $destuser = $row['username'];
+}
 
 $ref = "SVSU/";
 if($position == "CEO")
@@ -47,26 +57,17 @@ elseif($position == "Registrar")
     $ref = $ref ."REG/";
 else
     $ref = $ref .GetFirstLetter($college)."/";
-$ref = $ref .date("Y");
-$query = "select ref from letter order by ref desc";
-$result = $connect->query($query);
-$row = $result->fetch_assoc();
-$lastnum = $row['ref'];
-$num;
-if(empty($lastnum))
-    $num = "0001";
-else{
-    
+$ref = $ref .date("Y")."/";
+
+lineno55:
+$query = "SELECT digit FROM letter";
+$res = $connect->query($query);
+$num = rand(1000, 9999);
+while($row = $res->fetch_assoc()){
+    if($row['digit'] == $num)
+        goto lineno55;
 }
-if($result->num_rows<10)
-    $num = "/000".$result->num_rows;
-elseif($result->num_rows<100)
-    $num = "/00".$result->num_rows;
-elseif($result->num_rows<1000)
-    $num = "/0".$result->num_rows;
-else
-    $num = "/".$result->num_rows;
-$ref = $ref .$num;
+$ref = $ref.$num;
 
 ob_start();
 require_once "../../fpdf/fpdf.php";
@@ -121,20 +122,20 @@ $pdf->SetFont('Arial', '', 8);
 $pdf->Cell(0, 5, "Subhartipuram, NH-58, Delhi-Haridwar, Meerut Bypass Rd, Meerut, Uttar Pradesh 250005", 0, 1, "C");
 $pdf->Cell(0, 5, "Email: ".$email.", Website: www.subharti.org", 0, 1, "C");
 
-$query = "insert into letter(ref, appdate, status, position, source, name, sourceuser, destuser) values('".$ref."', '".date("d/m/Y")."', '"."Pending"."', '".$position."', '".$college."', '".$name."', '".$_SESSION['username']."', '".$destuser."')";
+$query = "insert into letter(digit, ref, appdate, status, position, source, name, sourceuser, destuser) values('".$num."', '".$ref."', '".date("d/m/Y")."', '"."Pending"."', '".$position."', '"."CEO"."', '".$name."', '".$_SESSION['username']."', '".$destuser."')";
 $connect->query($query);
 
-// $file = "../../Letters/".$ref.".pdf";
-// $pdf->output('F', $file);
-$pdf->output();
+$file = "../../Letters/".$num.".pdf";
+$pdf->output('F', $file);
+
 
 ?>
-<!-- <script>
+<script>
     swal("Letter Posted Successfully! Ref No. ".$ref, "", "success")
     .then((value) => {
-        window.location.replace("Admin.php");
+        window.location.replace("dashboard.php");
     });
-</script> -->
+</script>
 
 </body>
 </html>

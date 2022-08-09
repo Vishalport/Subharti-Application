@@ -35,7 +35,7 @@
     }
 
     $query = "create table if not exists letter(
-        id int not null primary key AUTO_INCREMENT,
+        digit int,
         ref varchar(20),
         appdate varchar(10),
         remark varchar(100),
