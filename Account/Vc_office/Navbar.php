@@ -73,7 +73,8 @@
               class="dropdown-menu dropdown-menu-end"
               aria-labelledby="navbarDropdownMenuLink"
               >
-            <li><a class="dropdown-item" href="Profile.php">My profile</a></li>
+            <li><a class="dropdown-item" href="Profile.php">My profile</a></li>z
+            <li><a class="dropdown-item" href="Edit.php">Edit Profile</a></li>z
             <li><a class="dropdown-item" href="Password.php">Password</a></li>
             <li><a class="dropdown-item" href="Logout.php">Logout</a></li>
           </ul>
