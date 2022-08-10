@@ -1,19 +1,3 @@
-<?php
-  session_start();
-  $_SESSION['username'] = $_SESSION['username'];
-
-  $connect = mysqli_connect("localhost", "root", "");
-    $connect->select_db("svsuapp");
-    $query = "select image from users where username = '".$_SESSION['username']."'";
-    $result = $connect->query($query);
-    $data = $result->fetch_assoc();
-
-    if(empty($data['image']))
-        $image = "https://img.icons8.com/fluency/96/000000/user-male-circle.png";
-    else
-        $image = "../../Resource/users/".$data['image'];
-?>
-
 <!--Main Navigation-->
 <header>
 
