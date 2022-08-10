@@ -35,7 +35,7 @@
     }
 
     $query = "create table if not exists letter(
-        digit int,
+        digit varchar(5),
         ref varchar(20),
         appdate varchar(10),
         remark varchar(100),
@@ -44,6 +44,23 @@
         position varchar(30),
         source varchar(50),
         name varchar(50),
+        dest varchar(100),
+        sourceuser varchar(20),
+        destuser varchar(20)
+    )";
+    $connect->query($query);
+
+    $query = "create table if not exists history(
+        digit varchar(5),
+        ref varchar(20),
+        appdate varchar(10),
+        remark varchar(100),
+        remarkdate varchar(10),
+        status varchar(10),
+        position varchar(30),
+        source varchar(50),
+        name varchar(50),
+        dest varchar(100),
         sourceuser varchar(20),
         destuser varchar(20)
     )";

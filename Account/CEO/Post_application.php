@@ -18,7 +18,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
 	<!-- MDB -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<title>Post Application</title>
 </head>
 <body>
@@ -69,3 +69,15 @@
 <script src="style.js"></script>
 <?php include "footer.php"; ?>
 
+<script>
+    $(document).ready(function(){
+        $("#college").hide();
+
+        $("#user_type").change(function(){
+            if($("#user_type").val() == "Principle")
+                $("#college").show();
+            else
+                $("#college").hide();
+        })
+    })
+</script>

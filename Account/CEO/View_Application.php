@@ -1,6 +1,7 @@
 <?php
     include "Navbar.php";
     include "Sidebar.php";
+	session_start();
 ?>
 <head>
 	<meta charset="utf-8">
@@ -30,213 +31,42 @@
 		<div class="card">
 			<div class="card-header text-center py-3">
 			<h5 class="mb-0 text-center">
-				<strong>Pending Application</strong>
+				<strong>Pending Applications</strong>
 			</h5>
 			</div>
 			<div class="card-body">
+			<?php
+				$connect = mysqli_connect("localhost", "root", "");
+				$connect->select_db("svsuapp");
+				$query = "select digit, source, position, name, appdate from letter where destuser = '".$_SESSION['username']."'";
+				$result = $connect->query($query);
+			?>
 			<div class="table-responsive">
 				<table class="table table-hover text-nowrap">
 				<thead>
-					<tr>
-					<th scope="col"></th>
-					<th scope="col">Application</th>
-					<th scope="col">Date/Time</th>
-					<th scope="col">From</th>
-					<th scope="col">Last-Date</th>
-					<th scope="col">Regarding</th>
-					</tr>
-				</thead>
-				<tbody>
-				<!-- number of applicaion -->
-					<tr>
-					<th scope="row"><a href="#">Application Name</a></th>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-down me-1"></i
-							><span>2</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>Ragistar</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-down me-1"></i
-							><span>Student</span>
-						</span>
-					</td>
-					</tr>
-			<!-- number of applicaion -->
-					<tr>
-					<th scope="row"><a href="#">Application Name</a></th>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-down me-1"></i
-							><span>2</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>Ragistar</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-down me-1"></i
-							><span>AICTC</span>
-						</span>
-					</td>
-					</tr>
-			<!-- number of applicaion -->
-					<tr>
-					<th scope="row"><a href="#">Application Name</a></th>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-down me-1"></i
-							><span>2</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>Account</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-down me-1"></i
-							><span>Money</span>
-						</span>
-					</td>
-					</tr>
+                        <tr>
+                            <th>College</th>
+                            <th>Position</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th colspan="3">Action</th>
+                        </tr>
+                    </thead>
+                    <?php
 
-				<!-- number of applicaion -->
-					<tr>
-					<th scope="row"><a href="#">Application Name</a></th>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-down me-1"></i
-							><span>2</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>Hostel Warden</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-down me-1"></i
-							><span>VHR Hostel</span>
-						</span>
-					</td>
-					</tr>
-
-					<!-- number of applicaion -->
-
-					<tr>
-					<th scope="row"><a href="#">Application Name</a></th>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-down me-1"></i
-							><span>2</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>VC office</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-down me-1"></i
-							><span>Cultural Program</span>
-						</span>
-					</td>
-					</tr>
-					<!-- number of applicaion -->
-					<tr>
-					<th scope="row"><a href="#">Application Name</a></th>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-down me-1"></i
-							><span>2</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>2 Day</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-up me-1"></i><span>Collage Principal</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-danger">
-						<i class="fas fa-caret-up me-1"></i><span>4 Day left</span>
-						</span>
-					</td>
-					<td>
-						<span class="text-success">
-						<i class="fas fa-caret-down me-1"></i
-							><span>Collage invitation</span>
-						</span>
-					</td>
-					</tr>
-				</tbody>
+                        while($row = $result->fetch_assoc()):?>
+                            <tr>
+                                <td><?php echo $row['source']?></td>
+                                <td><?php echo $row['position']?></td>
+                                <td><?php echo $row['name']?></td>
+                                <td><?php echo $row['appdate']?></td>
+                                <td>
+                                    <a href="process.php?viewapp=<?php echo $row['digit']?>" class="btn btn-info">View</a>
+                                    <a href="process.php?approve=<?php echo $row['digit']?>" class="btn btn-success">Approve</a>
+									<a href="process.php?reject=<?php echo $row['digit']?>" class="btn btn-danger">Reject</a>
+                                </td>
+                            </tr>
+                        <?php endwhile; ?>
 				</table>
 			</div>
 			</div>

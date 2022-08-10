@@ -26,13 +26,18 @@ $connect = mysqli_connect("localhost", "root", "");
 $connect->select_db("svsuapp");
 session_start();
 $query = "select name, email, position from users where username='".$_SESSION["username"]."'";
-$result = $connect->query($query);
+$result = $connect->query($query) or die($connect->error);
 $data = $result->fetch_assoc();
 
 $name = $data['name'];
 $position = $data['position'];
 $sendto = $_POST['user_type'];
-$college = $_POST['college'];
+if($sendto == "Principle")
+    $college = $_POST['college'];
+elseif($sendto == "VC")
+    $college = "VC Office";
+else
+    $college = "Registrar Office";
 $subject = $_POST['subject'];
 $msg = $_POST['msg'];
 $email = $data['email'];
@@ -43,7 +48,7 @@ elseif($sendto == "Registrar")
     $destuser = "registrar@subharti";
 else{
     $query = "SELECT username FROM users WHERE designation = '$college'";
-    $result = $connect->query($query);
+    $result = $connect->query($query) or die($connect->error);
     $row = $result->fetch_assoc();
     $destuser = $row['username'];
 }
@@ -59,14 +64,14 @@ else
     $ref = $ref .GetFirstLetter($college)."/";
 $ref = $ref .date("Y")."/";
 
-lineno55:
-$query = "SELECT digit FROM letter";
-$res = $connect->query($query);
-$num = rand(1000, 9999);
-while($row = $res->fetch_assoc()){
-    if($row['digit'] == $num)
-        goto lineno55;
-}
+$query = "SELECT digit FROM letter ORDER BY digit DESC LIMIT 1";
+$res = $connect->query($query) or die($connect->error);
+$row = $res->fetch_assoc();
+$num;
+if($res->num_rows == 0)
+    $num = "0001";
+else
+    $num = str_pad(($row['digit']+1), 4, 0, STR_PAD_LEFT);
 $ref = $ref.$num;
 
 ob_start();
@@ -122,20 +127,21 @@ $pdf->SetFont('Arial', '', 8);
 $pdf->Cell(0, 5, "Subhartipuram, NH-58, Delhi-Haridwar, Meerut Bypass Rd, Meerut, Uttar Pradesh 250005", 0, 1, "C");
 $pdf->Cell(0, 5, "Email: ".$email.", Website: www.subharti.org", 0, 1, "C");
 
-$query = "insert into letter(digit, ref, appdate, status, position, source, name, sourceuser, destuser) values('".$num."', '".$ref."', '".date("d/m/Y")."', '"."Pending"."', '".$position."', '"."CEO"."', '".$name."', '".$_SESSION['username']."', '".$destuser."')";
-$connect->query($query);
+$date = date("d/m/Y");
+$query = "insert into letter(digit, ref, appdate, remark, remarkdate, status, position, source, name, dest, sourceuser, destuser) values('".$num."', '".$ref."', '".$date."', 'Letter Posted', '".$date."', '"."Pending"."', '".$position."', '"."CEO"."', '".$name."', '".$college."', '".$_SESSION['username']."', '".$destuser."')";
+$connect->query($query) or die($connect->error);
+$connect->close();
 
 $file = "../../Letters/".$num.".pdf";
 $pdf->output('F', $file);
-
-
-?>
+$msg = "Letter Posted Successfully! Ref No. ".$ref;
+echo '
 <script>
-    swal("Letter Posted Successfully! Ref No. ".$ref, "", "success")
+    swal("'.$msg.'", "", "success")
     .then((value) => {
-        window.location.replace("dashboard.php");
+        window.location.replace("YourApp.php");
     });
-</script>
-
+</script>';
+?>
 </body>
 </html>

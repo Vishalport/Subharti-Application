@@ -12,14 +12,14 @@
 		<div class="card">
 			<div class="card-header text-center py-3">
 			<h5 class="mb-0 text-center">
-				<strong>Application History</strong>
+				<strong>Your Applications</strong>
 			</h5>
 			</div>
 			<div class="card-body">
 			<?php
 				$connect = mysqli_connect("localhost", "root", "");
 				$connect->select_db("svsuapp");
-				$query = "select * from history where destuser = '".$_SESSION['username']."'";
+				$query = "select * from letter where sourceuser = '".$_SESSION['username']."'";
 				$result = $connect->query($query);
 			?>
 			<div class="table-responsive">
@@ -31,8 +31,8 @@
                             <th>Status</th>
                             <th>Remark</th>
                             <th>Remark Date</th>
-                            <th>From</th>
-                            <th colspan="1">Action</th>
+                            <th>Send To</th>
+                            <th colspan="2">Action</th>
                         </tr>
                     </thead>
                     <?php
@@ -44,9 +44,10 @@
                                 <td><?php echo $row['status']?></td>
                                 <td><?php echo $row['remark']?></td>
                                 <td><?php echo $row['remarkdate']?></td>
-                                <td><?php echo $row['source']?></td>
+                                <td><?php echo $row['dest']?></td>
                                 <td>
                                     <a href="process.php?viewapp=<?php echo $row['digit']?>" class="btn btn-info">View</a>
+                                    <a href="process.php?withdraw=<?php echo $row['digit']?>" class="btn btn-secondary">Withdraw</a>
                                 </td>
                             </tr>
                         <?php endwhile; ?>

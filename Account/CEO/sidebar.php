@@ -5,7 +5,9 @@
   	type="text/javascript"
   	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
 	></script>
-
+<script>
+  window.history.forward();
+</script>
 	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 	<!-- Google Fonts -->
@@ -39,20 +41,20 @@
            ><i class="fas fa-Plus fa-fw me-3"></i><span>Post Application</span></a
           >
         <a
-           href="#"
+           href="History.php"
            class="list-group-item list-group-item-action py-2 ripple"
            ><i class="fas fa-newspaper fa-fw me-3"></i
           ><span>History</span></a
           >
           <a
-           href="Status.php"
+           href="YourApp.php"
            class="list-group-item list-group-item-action py-2 ripple"
            ><i class="fas fa-thermometer-half fa-fw me-3"></i
-          ><span>View Status</span></a
+          ><span>Your Application</span></a
           >
 		    <a
         href="http://192.168.60.4:90/"
-        class="list-group-item list-group-item-action py-2 ripple"
+        class="list-group-item list-group-item-action py-2 ripple" target="_blank"
         ><i class="fas fa-search fa-fw me-3"></i><span>Subharti ERP</span></a
         >
         <a
