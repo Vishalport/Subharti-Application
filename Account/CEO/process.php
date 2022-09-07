@@ -28,11 +28,13 @@
 
     if(isset($_GET["withdraw"])){
         $digit = $_GET["withdraw"];
-        $file = "../../Letters/".$digit.".pdf";
+        
+        $file = "../../Letters/$digit.pdf";
         if(unlink($file)){
-            $query = "DELETE FROM letter WHERE digit = '".$digit."'";
-            $connect->query($query) or die($connect->error);
+            $query = "DELETE FROM letters WHERE digit = '$digit'";
+            $connect->query($query);
             header("Location:YourApp.php");
         }
     }
 ?>
+
