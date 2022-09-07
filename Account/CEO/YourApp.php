@@ -3,6 +3,9 @@
     include "Sidebar.php"; 
 ?>
 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
 <body>
 <main style="margin-top: 58px" id="nav_mp">
 	<div class="container pt-4">
@@ -21,6 +24,7 @@
 				$connect->select_db("svsuapp");
 				$query = "select * from letter where sourceuser = '".$_SESSION['username']."'";
 				$result = $connect->query($query);
+                $row;
 			?>
 			<div class="table-responsive">
 				<table class="table table-hover text-nowrap">
@@ -47,7 +51,7 @@
                                 <td><?php echo $row['dest']?></td>
                                 <td>
                                     <a href="process.php?viewapp=<?php echo $row['digit']?>" class="btn btn-info">View</a>
-                                    <a href="process.php?withdraw=<?php echo $row['digit']?>" class="btn btn-secondary">Withdraw</a>
+                                    <a class="btn btn-secondary withdraw">Withdraw</a>
                                 </td>
                             </tr>
                         <?php endwhile; ?>
@@ -60,3 +64,24 @@
 </main>
 </body>
 <?php  include "Footer.php"; ?>
+
+<script>
+    $(document).ready(function() {
+        $(".withdraw").click(function() {
+            swal({
+            title: "Are you sure want to withdraw the application?",
+            text: "Once withdrawal, you will not be able to recover this application!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+            })
+            .then((willDelete) => {
+            if (willDelete) {
+                var digit = "<?php echo $row['digit'] ?>";
+                window.location.replace("process.php?withdraw='"+digit+"'");
+            }
+            });
+        })
+    })
+</script>
+

@@ -1,9 +1,9 @@
 <?php
-	include "Navbar.php";
-    include "Sidebar.php";
 	session_start();
 	if(!$_SESSION['CeoLogin'])
 		header('Location: ../../index.php');
+	include "Navbar.php";
+    include "Sidebar.php";
 	$_SESSION['username'] = $_SESSION['username'];
 
 	$connect = mysqli_connect("localhost", "root", "");
@@ -35,7 +35,6 @@
 	<title>Subharti Application</title>
 </head>
 <body>
-
 <!--Main Layout-->
 <main style="margin-top: 58px">
   <div class="container pt-4">
